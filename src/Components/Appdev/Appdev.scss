@@ -1,0 +1,242 @@
+  :root {
+      --yellow: #F5C32C;
+      --orange: #BC2C33;
+      --yellowish: #bc2c337a;
+      --black: #242D49;
+      --gray: #788097;
+      --blueCard: #DDF8FE;
+      --purple: rgb(238 210 255);
+      --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+      --orangeCard: rgba(252, 166, 31, 0.45);
+      --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+
+  }
+
+  .more{
+   margin-top: -3rem;
+//    background: linear-gradient(90.21deg, #BC2C33 -5.91%, #242D49 111.58%);
+    padding: 100px 0 200px 0;
+    // border: 1px solid black;
+   
+  }
+
+.service__container{
+    margin: 5rem 5rem 5rem 5rem;
+    display: grid;
+    grid-template-columns: 35% 50%;
+    gap: 15%;
+    color: white;
+}
+
+.ourServices{
+    width: 100%;
+    aspect-ratio: 1/1;
+    background: linear-gradient(45deg,transparent,var(--black),transparent);
+    display: grid;
+    place-items: center;
+    border-radius: 2rem;
+
+}
+.servicesImage{
+    border-radius: 2rem;
+    overflow: hidden;
+    transform: rotate(10deg);
+    transition: .3s ease;
+    height: 98%;
+
+    &:hover{
+        transform: rotate(0);
+    }
+}
+.s__cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.5rem;
+}
+.s__card{
+    background: var(--black);
+    border: 2px solid transparent;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+&:hover{
+    background: transparent;
+    border-color: var(--black);
+    cursor: default;
+    transition: .4s ease;
+h5{
+    color: var(--black);
+}
+}
+.s_icon{
+color: #5f6885;
+font-size: 1.4rem;
+margin-bottom: 1rem;
+}
+
+h5{
+    font-size: 0.95rem;
+    color: whitesmoke;
+    font-weight: 700;
+}
+small{
+    font-size: 0.8rem;
+    color: var(--gray);
+}
+}
+.ourServices__content p{
+    margin: 2rem 0 2.6rem;
+   color: var(--gray);
+}
+
+
+
+.Ccards {
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    padding: 20px;
+    grid-gap: 40px;
+    margin-bottom: -3rem;
+}
+
+.Ccard {
+    background-color: #1c1b29;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+}
+
+.Ccontainer {
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+img {
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+}
+
+.Ccontainer:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+    opacity: 0.7;
+}
+
+.card1>.Ccontainer:after {
+    background-image: linear-gradient(135deg,
+            #0000ec83,
+            #fb36f481);
+}
+
+.card2>.Ccontainer:after {
+    background-image: linear-gradient(135deg,
+            #2bdde37c,
+            #42ffdc98);
+}
+
+.card3>.Ccontainer:after {
+    background-image: linear-gradient(135deg,
+            #ffac1d91,
+            #f84f1c75);
+}
+
+.details {
+    padding: 20px 10px;
+}
+
+.details>h3 {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px 0 15px 0;
+}
+
+.details>p {
+    color: #a0a0a0;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+@media screen and( max-width:1024px) {
+    .service__container{
+        grid-template-columns: repeat(1,1fr);
+        gap: 0;
+
+        .ourServices{
+            width: 50%;
+            margin: 2rem auto 4rem;
+        }
+        .ourServices__content p{
+            margin: 1rem 0 1.5rem;
+        }
+    }
+}
+@media screen and(max-width:600px) {
+    .ourServices{
+        width: 65%;
+        margin: 0 auto 3rem;
+    }
+    .s__cards{
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    .ourServices__content{
+        text-align: center;
+
+        p{
+            margin: 1.5rem 0;
+        }
+    }
+}
+@media screen and(min-width:360px) and (max-width:411px){
+    .ourServices{
+        width: 65%;
+        // margin-left: -5rem !important;
+    }
+    .s__cards{
+       margin-left: -3rem;
+    }
+    .ourServices__content{
+        text-align: center;
+        width: 15rem;
+
+        
+    }
+}
+@media screen and(width:280px){
+    .ourServices{
+        width: 100% !important;
+        // margin-left: -1rem !important;
+    }
+    .s__cards{
+       margin-left: -6rem;
+      gap: 0;
+      width: 1rem !important;
+    }
+    .ourServices__content{
+        text-align: center;
+        width: 10rem;
+
+        
+    }
+}
+
+@media screen and(max-width:600px) {
+.Ccards {
+    // display: grid;
+         grid-template-columns: repeat(1,1fr);
+         padding: 20px;
+         margin-top: 1rem !important;
+        grid-gap: 20px !important;
+        // margin-bottom: -3rem;
+       margin-right: 2rem;
+       margin-bottom: -5rem !important;
+    }
+}
