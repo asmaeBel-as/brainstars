@@ -20,25 +20,57 @@ const Card = () => {
             <div className="videooCard">
               {" "}
               <div data-aos="fade-left" className="cardVideo">
-                <video
-                  src={video1}
-                  controls
-                 
-                  
-                 
-                ></video>
+                <video src={video1} controls></video>
               </div>
               <div data-aos="fade-left" className="cardVideo">
-                <video
-                  src={video}
-                  controls="controls"
-                  
-                  
-                  type="video/mp4"
-                ></video>
+                <video src={video} controls="controls" type="video/mp4"></video>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="bubbleContainer">
+        <div className="bubbles">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
     </section>

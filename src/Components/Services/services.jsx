@@ -10,6 +10,9 @@ import { Link } from "react-router-dom";
 
 const services = () => {
   const transition = { duration: 2, type: "spring" };
+  const scrollToTop = () => {
+    window.scrollTo(0, 0)
+}
 
   return (
     <section className="services__section">
@@ -39,7 +42,8 @@ const services = () => {
               odio! Voluptates, aperiam.
             </span>
             <Link
-              to={'/AppDev'}
+              onClick={scrollToTop}
+              to={"/AppDev"}
               className="btn s-button"
               data-aos="fade-right"
               data-aos-duration="2000"
@@ -60,21 +64,21 @@ const services = () => {
           </div>
           <div className="cards">
             <motion.div
-              whileInView={{ left: "23rem" }}
+              whileInView={{ left: "26rem" }}
               initial={{ left: "25rem" }}
               transition={{ transition }}
               style={{ left: "14rem" }}
+              className="graphic"
             >
-              <Link to={'/graphic'}>
+              <Link to={"/graphic"} onClick={scrollToTop}>
                 <SecCard
-                emoji={good}
-                heading={"Graphic Design"}
-                detail={
-                  "Graphic design is essential for developing a professional brand and optimising your marketing efforts across all media…"
-                }
-              />
+                  emoji={good}
+                  heading={"Graphic Design"}
+                  detail={
+                    "Graphic design is essential for developing a professional brand and optimising your marketing efforts across all media…"
+                  }
+                />
               </Link>
-
             </motion.div>
 
             <motion.div
@@ -82,48 +86,52 @@ const services = () => {
               initial={{ left: "-14rem" }}
               transition={{ transition }}
               style={{ top: "15rem", left: "-7rem" }}
+              className="lastone"
             >
-              <Link to={"/web"}>  <SecCard
-                emoji={thumbup}
-                heading={"Web & App Development"}
-                detail={
-                  "Website creation is one of the strategies to assure your company’s success by telling people about the products and services you provide…"
-                }
-              /></Link>
-            
+              <Link to={"/web"} onClick={scrollToTop}>
+                <SecCard
+                  emoji={thumbup}
+                  heading={"Web & App Development"}
+                  detail={
+                    "Website creation is one of the strategies to assure your company’s success by telling people about the products and services you provide…"
+                  }
+                />
+              </Link>
             </motion.div>
             <motion.div
               whileInView={{ left: "15rem" }}
               initial={{ left: "20rem" }}
               transition={{ transition }}
               style={{ top: "25rem", left: "15rem" }}
+              className="digital"
             >
-              <Link
-              to={'/digital'}
-              ><SecCard
-                emoji={code}
-                heading={"Digital Marketing"}
-                detail={
-                  "Our goal is to increase your sales. And one of the most important instruments for doing so is digital marketing. Will work with your plan.."
-                }
-              /></Link>
-              
+              <Link onClick={scrollToTop} to={"/digital"}>
+                <SecCard
+                  emoji={code}
+                  heading={"Digital Marketing"}
+                  detail={
+                    "Our goal is to increase your sales. And one of the most important instruments for doing so is digital marketing. Will work with your plan.."
+                  }
+                />
+              </Link>
             </motion.div>
             <motion.div
               whileInView={{ top: "-10rem", left: "-3rem" }}
               initial={{ top: "-10rem", left: "-8rem" }}
               transition={{ transition }}
               style={{ left: "14rem" }}
+              className="appd"
             >
-              <Link to={'/mobile'}> <SecCard
-                emoji={good}
-                heading={"App dev"}
-                detail={
-                  "Graphic design is essential for developing a professional brand and optimising your marketing efforts across all media…"
-                }
-                
-              /></Link>
-             
+              <Link to={"/mobile"} onClick={scrollToTop}>
+                {" "}
+                <SecCard
+                  emoji={good}
+                  heading={"App dev"}
+                  detail={
+                    "Graphic design is essential for developing a professional brand and optimising your marketing efforts across all media…"
+                  }
+                />
+              </Link>
             </motion.div>
           </div>{" "}
           <div

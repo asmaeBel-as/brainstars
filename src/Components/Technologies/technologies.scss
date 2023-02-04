@@ -10,17 +10,21 @@
       --orangeCard: rgba(252, 166, 31, 0.45);
       --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
   }
+  
 .skill {
-    padding: 0 0 50px 0;
+    // padding: 0 0 0 0;
     position: relative;
+    width: 95rem;
+    // margin-left: ;
 }
 
 .skill-bx {
     background: var(--black);
     border-radius: 64px;
     text-align: center;
-    padding: 60px 50px;
+     padding-bottom: 60px ;
     margin-top: 5rem;
+    margin-left: -12rem;
 }
 
 .skill h2 {
@@ -41,6 +45,7 @@
      width: 200px;
      height: 200px;
     //  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    
 
      img {
          position: absolute;
@@ -49,10 +54,42 @@
          width: 100%;
          height: 100%;
          object-fit: cover;
-       
+         
+        -webkit-transition: -webkit-transform 1s;
+        
+            &:hover {
+                -webkit-transform: rotate(360deg) translateZ(0);
+            }
      }
  }
 }
+
+.arrowContainer{
+    margin-left:65rem ;
+    
+}
+   .sliderArrow{
+    color: #ffffff ;
+    background: #0800006b ;
+    z-index: 100;
+    height: 4rem;
+    width: 4rem;
+    position: absolute;
+    border-radius: 50%;z-index: 999;
+} 
+.arrowContainer2{
+   
+    margin-left: -2rem;
+}
+   .sliderArrow2{
+    color: #ffffff ;
+    background: #0800006b ;
+    z-index: 100;
+    height: 4rem;
+    width: 4rem;
+    position: absolute;
+    border-radius: 50%;z-index: 999;
+} 
 
 
 .skill p {
@@ -64,13 +101,13 @@
 }
 
 .skill-slider {
-    width: 80%;
+   
     margin: 0 auto;
     position: relative;
 }
 .skill-slider .item {
    height: 250px;
-    
+    // margin-left: 5rem;
     position: relative;
 
     h5{
@@ -115,3 +152,59 @@
         transform: translateY(-20px);
     }
 }
+
+ @media screen and (max-width: 540px) {
+    .skill{
+        width: 55%;
+        margin-left: 12rem;
+    }
+   .arrowContainer {
+       margin-left: 17rem;
+
+   }
+   .skill-slider {
+       .image__container {
+        margin-left: 3rem;
+       }}
+ }
+ @media screen and (device-width: 280px) {
+    .skill{
+        width: 30% !important;
+        // margin-left: 10rem;
+
+        h2{
+            font-size: 20px;
+            padding-top: 2rem;
+        }
+    }
+   .arrowContainer {
+       margin-left: 9rem;
+
+   }
+   .skill-slider {
+       .image__container {
+        margin-left: 0 !important;
+       }}
+ }
+
+  @media screen and (min-width: 768px) and (max-width:1024px) {
+      .skill {
+          width: 100%;
+         margin-left: 6rem;
+      }
+
+      .arrowContainer {
+          margin-left: 44rem;
+
+      }
+
+      .skill-slider {
+          .image__container {
+              margin-left: 3rem;
+          }
+      }
+
+          .background-image-left {
+            margin-left: -8rem;
+          }
+  }

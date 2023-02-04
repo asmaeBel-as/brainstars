@@ -11,11 +11,11 @@ import "aos/dist/aos.css";
 import { RiQuestionFill } from "react-icons/ri";
 import { BsFillJournalBookmarkFill } from "react-icons/bs";
 import { AnimatePresence, motion } from "framer-motion/dist/framer-motion";
-import Upwork from "../../Assets/Upwork.png";
-import Fiverr from "../../Assets/fiverr.png";
-import Amazon from "../../Assets/amazon.png";
-import Shopify from "../../Assets/Shopify.png";
-import Facebook from "../../Assets/Facebook.png";
+import Upwork from "../../Assets/itsu.jpeg";
+import secure from "../../Assets/secure.png";
+import cloud from "../../Assets/images.png";
+import consult from "../../Assets/images (2).jpeg";
+import backup from "../../Assets/backup.jpeg";
 import Animations from '../../utilities/Animation'
 import ScrollService from "../../utilities/ScrollService";
 import { Link } from "react-router-dom";
@@ -32,11 +32,14 @@ const about = (props) => {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []); 
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
 
   const transition = { duration: 2, type: "spring" };
   return (
     <section className="about-us-container fade-in ">
-      <div className="program__heada" >
+      <div className="program__heada">
         <span data-aos="fade-up" data-aos-duration="2000">
           {<BsFillJournalBookmarkFill />}
         </span>
@@ -45,7 +48,7 @@ const about = (props) => {
         </h2>
       </div>
 
-      <div className="works" id="works" >
+      <div className="works" id="works">
         {/* left side */}
         <div className="w-left">
           <div className="awesome">
@@ -57,22 +60,19 @@ const about = (props) => {
               Brain Star Technologies
             </span>
             <spane data-aos="fade-up-left" data-aos-duration="1100">
-              Brain Star technologies deliver a wide range of software <br />
-              development solutions that includes Digital marketing services,
-              <br />
-              affordable SEO services, Social Media Marketing, Website Design
+              Brain Star technologies deliver a wide range of software
+              development solutions that includes <br /> Digital marketing
+              services, affordable SEO services, Social Media Marketing, Website
+              Design
               <br />
               and Development, Email Outreach, Content Writing, and
+              Optimization, we do it all. <br /> We assure you to get more
+              leads. more sales. Increased revenue. <br /> In short with Brain
+              star Technologies you may establish your digital <br /> presence
+              today and explore your market potential as we are one <br />
+              of the best web design company in USA. We thrive to be the best{" "}
               <br />
-              Optimization, we do it all. We assure you to get more leads. more
-              <br />
-              sales. Increased revenue. In short with Brain star Technologies
-              <br />
-              you may establish your digital presence today and explore your
-              <br />
-              market potential as we are one of the best web design company in
-              <br />
-              USA. We thrive to be the best digital marketing company in USA and
+              digital marketing company in USA and
               <br />
               are a full-service digital marketing agency that helps your
               <br />
@@ -85,7 +85,8 @@ const about = (props) => {
             </spane>
 
             <Link
-              to={'./contactus'}
+              onClick={scrollToTop}
+              to={"./contactus"}
               className="btn s-button"
               data-aos="fade-up"
               data-aos-duration="1000"
@@ -115,18 +116,33 @@ const about = (props) => {
           >
             <div className="w-secCircle">
               <img src={Upwork} alt="" />
+              <div class="overlay">
+                <div class="text">IT support</div>
+              </div>
             </div>
             <div className="w-secCircle">
-              <img src={Fiverr} alt="" />
+              <img src={cloud} alt="" />
+              <div class="overlay">
+                <div class="text">Cloud services</div>
+              </div>
             </div>
             <div className="w-secCircle">
-              <img src={Amazon} alt="" />
+              <img src={backup} alt="" />
+              <div class="overlay">
+                <div class="text">Backup</div>
+              </div>
             </div>{" "}
             <div className="w-secCircle">
-              <img src={Shopify} alt="" />
+              <img src={consult} alt="" />
+              <div class="overlay">
+                <div class="text">IT consulting</div>
+              </div>
             </div>
             <div className="w-secCircle">
-              <img src={Facebook} alt="" />
+              <img src={secure} alt="" />
+              <div class="overlay">
+                <div class="text">Network security</div>
+              </div>
             </div>
           </motion.div>
           {/* background Circles */}

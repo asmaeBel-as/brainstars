@@ -20,6 +20,7 @@
   justify-content: center;
   border-radius: 0%;
   position: relative;
+  z-index: 9;
 }
 .card .secContainer {
   background-position: center;
@@ -72,15 +73,186 @@
   z-index: 999;
 }
 
+.bubbleContainer {
+  position: relative;
+  width: 100%;
+  height: 2vh;
+  z-index: -1;
+}
+.bubbleContainer .bubbles {
+  position: relative;
+  display: flex;
+}
+.bubbleContainer .bubbles span {
+  position: relative;
+  width: 30px !important;
+  height: 30px !important;
+  background: var(--black);
+  margin: 0 4px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px rgba(79, 195, 220, 0.2666666667), 0 0 50px #4FC3DC, 0 0 100px #4FC3DC;
+  -webkit-animation: animate 10s linear infinite !important;
+          animation: animate 10s linear infinite !important;
+  -webkit-animation-duration: calc(20s / var(--i)) !important;
+          animation-duration: calc(20s / var(--i)) !important;
+}
+.bubbleContainer .bubbles span:nth-child(even) {
+  background: var(--orange);
+  box-shadow: 0 0 0 10px rgba(220, 79, 79, 0.2666666667), 0 0 50px rgba(220, 79, 79, 0.4039215686), 0 0 100px rgba(220, 79, 79, 0.4235294118);
+}
+.bubbleContainer .bubbles span:nth-child(1) {
+  --i: 11;
+}
+.bubbleContainer .bubbles span:nth-child(2) {
+  --i: 13;
+}
+.bubbleContainer .bubbles span:nth-child(3) {
+  --i: 15;
+}
+.bubbleContainer .bubbles span:nth-child(4) {
+  --i: 26;
+}
+.bubbleContainer .bubbles span:nth-child(5) {
+  --i: 12;
+}
+.bubbleContainer .bubbles span:nth-child(6) {
+  --i: 19;
+}
+.bubbleContainer .bubbles span:nth-child(7) {
+  --i: 22;
+}
+.bubbleContainer .bubbles span:nth-child(8) {
+  --i: 14;
+}
+.bubbleContainer .bubbles span:nth-child(9) {
+  --i: 9;
+}
+.bubbleContainer .bubbles span:nth-child(10) {
+  --i: 25;
+}
+.bubbleContainer .bubbles span:nth-child(11) {
+  --i: 12;
+}
+.bubbleContainer .bubbles span:nth-child(12) {
+  --i: 17;
+}
+.bubbleContainer .bubbles span:nth-child(13) {
+  --i: 16;
+}
+.bubbleContainer .bubbles span:nth-child(14) {
+  --i: 19;
+}
+.bubbleContainer .bubbles span:nth-child(15) {
+  --i: 25;
+}
+.bubbleContainer .bubbles span:nth-child(16) {
+  --i: 20;
+}
+.bubbleContainer .bubbles span:nth-child(17) {
+  --i: 21;
+}
+.bubbleContainer .bubbles span:nth-child(18) {
+  --i: 13;
+}
+.bubbleContainer .bubbles span:nth-child(19) {
+  --i: 9;
+}
+.bubbleContainer .bubbles span:nth-child(20) {
+  --i: 21;
+}
+.bubbleContainer .bubbles span:nth-child(21) {
+  --i: 11;
+}
+.bubbleContainer .bubbles span:nth-child(22) {
+  --i: 12;
+}
+.bubbleContainer .bubbles span:nth-child(23) {
+  --i: 14;
+}
+.bubbleContainer .bubbles span:nth-child(24) {
+  --i: 30;
+}
+.bubbleContainer .bubbles span:nth-child(25) {
+  --i: 25;
+}
+.bubbleContainer .bubbles span:nth-child(26) {
+  --i: 9;
+}
+.bubbleContainer .bubbles span:nth-child(27) {
+  --i: 18;
+}
+.bubbleContainer .bubbles span:nth-child(28) {
+  --i: 20;
+}
+.bubbleContainer .bubbles span:nth-child(29) {
+  --i: 9;
+}
+.bubbleContainer .bubbles span:nth-child(30) {
+  --i: 25;
+}
+.bubbleContainer .bubbles span:nth-child(31) {
+  --i: 18;
+}
+.bubbleContainer .bubbles span:nth-child(32) {
+  --i: 20;
+}
+.bubbleContainer .bubbles span:nth-child(33) {
+  --i: 25;
+}
+.bubbleContainer .bubbles span:nth-child(34) {
+  --i: 15;
+}
+.bubbleContainer .bubbles span:nth-child(35) {
+  --i: 9;
+}
+.bubbleContainer .bubbles span:nth-child(36) {
+  --i: 16;
+}
+.bubbleContainer .bubbles span:nth-child(37) {
+  --i: 14;
+}
+.bubbleContainer .bubbles span:nth-child(38) {
+  --i: 11;
+}
+.bubbleContainer .bubbles span:nth-child(39) {
+  --i: 21;
+}
+.bubbleContainer .bubbles span:nth-child(40) {
+  --i: 16;
+}
+.bubbleContainer .bubbles span:nth-child(41) {
+  --i: 25;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    transform: translateY(5vh) scale(0);
+  }
+  100% {
+    transform: translateY(-90vh) scale(1);
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(5vh) scale(0);
+  }
+  100% {
+    transform: translateY(-90vh) scale(1);
+  }
+}
 @media screen and (max-width: 540px) {
   .card {
-    margin-top: 10rem;
+    margin-top: 15rem;
   }
   .videooCard {
     display: grid;
     grid-template-columns: repeat(1, 1fr) !important;
     width: 20rem;
     margin-left: -3rem;
+  }
+  .bubbleContainer {
+    display: none;
   }
 }
 @media screen and (device-width: 540px) {
@@ -101,5 +273,8 @@
 @media screen and (min-device-width: 820px) and (max-device-width: 1024px) {
   .card {
     margin-top: 5rem !important;
+  }
+  .bubbleContainer {
+    display: none;
   }
 }/*# sourceMappingURL=card.css.map */

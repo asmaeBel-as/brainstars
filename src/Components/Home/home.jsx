@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import "./home.css";
-import headerImg from "../../Assets/header-img.svg";
+import headerImg from "../../Assets/IT-Support-USP.png";
 import img from "../../Assets/moon.png";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
@@ -127,7 +127,7 @@ const home = () => {
               {({ isVisible }) => (
                 <div
                   className={
-                    isVisible ? "animate__animated animate__zoomIn" : "img"
+                     "img"
                   }
                 >
                   <img src={headerImg} alt="Header Img" />

@@ -17,6 +17,7 @@
   gap: 1rem;
   margin-bottom: -9rem;
   margin-top: 4rem;
+  margin-left: -5rem;
 }
 .program__headss span {
   background: var(--yellowish);
@@ -39,6 +40,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  margin-left: -5rem;
   /* gap: 20px; */
 }
 .services .awesome > :nth-child(1) {
@@ -81,14 +83,19 @@
 /* left side */
 /* right sided */
 @media screen and (max-width: 540px) {
+  .program__headss {
+    margin-top: -5rem;
+    margin-left: 1rem;
+  }
   .services {
-    margin-top: 0 !important;
+    margin-top: -10rem !important;
     flex-direction: column !important;
     gap: 5rem !important;
     height: 110rem !important;
   }
   .services .awesome {
-    padding-top: 10rem;
+    padding-top: 8rem;
+    margin-left: 2rem;
   }
   .cards {
     margin-top: -10rem !important;
@@ -121,8 +128,32 @@
   }
 }
 @media screen and (device-width: 768px) {
-  .cards {
+  .program__headss {
+    margin-left: 1rem;
+  }
+  .services .awesome {
+    padding-top: 10rem;
+    margin-left: 0.5rem;
+  }
+  .cards .lastone {
+    margin-left: 9rem;
+  }
+  .cards .appd {
+    margin-left: 2rem;
+  }
+  .cards .digital {
+    margin-left: 10rem;
+  }
+}
+@media screen and (device-width: 820px) {
+  .cards .lastone {
     margin-left: 5rem;
+  }
+  .cards .graphic {
+    margin-left: -5rem;
+  }
+  .cards .digital {
+    margin-left: 4rem;
   }
 }
 @media screen and (device-width: 280px) {

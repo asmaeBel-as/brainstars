@@ -1,6 +1,6 @@
 :root {
   --yellow: #F5C32C;
-  --yellowish:#bc2c337a;
+  --yellowish: #bc2c337a;
   --orange: #BC2C33;
   --black: #1c4494;
   --black2: #1c55c7d7;
@@ -12,11 +12,35 @@
   --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
 }
 
+.separator {
+  text-align: center;
+  margin-bottom: -21rem;
+  margin-top: 20rem;
+}
+
+.separator::before,
+.separator::after {
+  content: " ";
+  display: inline-block;
+  border-top: 2px solid #333;
+  padding-bottom: 4px;
+  width: 15%;
+}
+
+.separator::before {
+  margin-right: 12px;
+}
+
+.separator::after {
+  margin-left: 12px;
+}
+
 .experience {
-  margin: 25rem 20rem 5rem 19rem;
+  padding: 15rem 25rem 15rem 15rem;
+  margin-top: 20rem;
   display: flex;
   align-items: center;
-  gap: 5rem;
+  gap: 4rem;
   height: 30vh;
 }
 .experience .background-image-left {
@@ -83,37 +107,68 @@
           animation: animate 15s linear infinite;
   -webkit-animation-duration: calc(10s / var(--i));
           animation-duration: calc(10s / var(--i));
+  z-index: -999;
 }
 .experience .bubbleContainer .bubbles span:nth-child(even) {
   background: var(--orange);
   box-shadow: 0 0 0 10px rgba(220, 79, 79, 0.2666666667), 0 0 50px #dc4f4f, 0 0 100px #dc4f4f;
 }
 .experience .bubbleContainer .bubbles span:nth-child(1) {
-  --i:11;
+  --i: 11;
 }
 .experience .bubbleContainer .bubbles span:nth-child(2) {
-  --i:13;
+  --i: 13;
 }
 .experience .bubbleContainer .bubbles span:nth-child(3) {
-  --i:15;
+  --i: 15;
 }
 .experience .bubbleContainer .bubbles span:nth-child(4) {
-  --i:26;
+  --i: 26;
 }
 .experience .bubbleContainer .bubbles span:nth-child(5) {
-  --i:12;
+  --i: 12;
 }
 .experience .bubbleContainer .bubbles span:nth-child(6) {
-  --i:19;
+  --i: 19;
 }
 .experience .bubbleContainer .bubbles span:nth-child(7) {
-  --i:22;
+  --i: 22;
 }
 .experience .bubbleContainer .bubbles span:nth-child(8) {
-  --i:14;
+  --i: 14;
 }
 .experience .bubbleContainer .bubbles span:nth-child(9) {
-  --i:9;
+  --i: 9;
+}
+.experience .bubbleContainer .bubbles span:nth-child(10) {
+  --i: 25;
+}
+.experience .bubbleContainer .bubbles span:nth-child(11) {
+  --i: 12;
+}
+.experience .bubbleContainer .bubbles span:nth-child(12) {
+  --i: 17;
+}
+.experience .bubbleContainer .bubbles span:nth-child(13) {
+  --i: 16;
+}
+.experience .bubbleContainer .bubbles span:nth-child(14) {
+  --i: 19;
+}
+.experience .bubbleContainer .bubbles span:nth-child(15) {
+  --i: 25;
+}
+.experience .bubbleContainer .bubbles span:nth-child(16) {
+  --i: 20;
+}
+.experience .bubbleContainer .bubbles span:nth-child(17) {
+  --i: 21;
+}
+.experience .bubbleContainer .bubbles span:nth-child(18) {
+  --i: 13;
+}
+.experience .bubbleContainer .bubbles span:nth-child(19) {
+  --i: 9;
 }
 @-webkit-keyframes animate {
   0% {
@@ -136,9 +191,12 @@
   flex-direction: column;
   align-items: center;
 }
+.experience .achievement span {
+  font-size: 25px;
+}
 .experience .achievement .circle {
-  width: 7rem;
-  height: 7rem;
+  width: 10rem;
+  height: 10rem;
   background: white;
   border-radius: 100%;
   position: relative;
@@ -165,36 +223,6 @@
   color: #BC2C33;
 }
 
-.work-backCircle {
-  position: absolute;
-  height: 5rem;
-  width: 5rem;
-  border-radius: 100%;
-  /* darkMode */
-  z-index: 9999;
-}
-
-.work-blueCircle {
-  background: #1949b8;
-  left: -2rem;
-  top: 150rem;
-}
-
-.work-backCircle3 {
-  position: absolute;
-  height: 5rem;
-  width: 5rem;
-  border-radius: 100%;
-  /* darkMode */
-  z-index: -1;
-}
-
-.work-redCircle {
-  background: #b819a3;
-  left: 40rem;
-  top: 165rem;
-}
-
 @-webkit-keyframes work-blueCircle {
   from {
     transform: translateY(15rem);
@@ -212,13 +240,16 @@
     transform: translateX(90%);
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
+  .separator {
+    margin-top: 10rem;
+  }
   .experience {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-left: 5rem;
+    margin-left: -13rem;
     margin-top: 10rem !important;
-    padding-bottom: -5rem !important;
+    padding-bottom: -10rem !important;
     gap: -2;
   }
   .experience .achievement {
@@ -231,14 +262,27 @@
 }
 @media screen and (device-width: 280px) {
   .experience {
-    margin-left: 1rem;
-    margin-top: 15rem !important;
+    margin-left: -14rem;
+    margin-top: 10rem !important;
+  }
+  .experience .achievement span {
+    font-size: 20px;
+  }
+  .experience .achievement .circle {
+    width: 4rem !important;
+    height: 4rem !important;
   }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 912px) {
+  .separator {
+    margin-top: -25rem;
+  }
   .experience {
-    margin-top: -25rem !important;
-    margin-left: 3rem;
+    margin-left: -10rem;
+  }
+  .experience .achievement .circle {
+    width: 6rem;
+    height: 6rem;
   }
 }
 @media only screen and (device-width: 540px) {
@@ -251,7 +295,11 @@
 }
 @media only screen and (device-width: 1024px) {
   .experience {
-    margin-left: 10rem;
-    margin-top: 20rem !important;
+    margin-left: -10rem;
+  }
+}
+@media screen and (device-width: 540px) {
+  .experience {
+    margin-left: -6rem !important;
   }
 }/*# sourceMappingURL=counter.css.map */

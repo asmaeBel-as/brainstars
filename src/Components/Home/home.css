@@ -16,7 +16,7 @@
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url("../../Assets/home.gif");
+  background-image: url("../../Assets/banner-bg.png");
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -148,6 +148,12 @@
     transform: translateY(-20px);
   }
 }
+.img {
+  width: 40rem;
+  margin-left: -5rem;
+  margin-top: 2rem;
+}
+
 @-webkit-keyframes kkey {
   from {
     transform: translateX(0px);
@@ -156,6 +162,7 @@
     transform: translateX(calc(100vw - 10vmin));
   }
 }
+
 @keyframes kkey {
   from {
     transform: translateX(0px);
@@ -194,7 +201,7 @@
   background: transparent;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
   .banner .shooting {
     display: none;
   }
@@ -206,5 +213,14 @@
   }
   .banner .shooting3 {
     display: none;
+  }
+  .banner .img {
+    width: 90%;
+    margin-left: 2rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .banner .img {
+    width: 150%;
   }
 }/*# sourceMappingURL=home.css.map */

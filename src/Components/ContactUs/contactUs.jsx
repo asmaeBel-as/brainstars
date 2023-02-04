@@ -86,7 +86,7 @@ export const contactUs = () => {
                          <Col size={12} sm={6} className="px-1">
                            <input
                              type="text"
-                             value={formDetails.phone}
+                             value={formDetails.skype}
                              placeholder="Skype Id"
                              onChange={(e) =>
                                onFormUpdate("skype", e.target.value)

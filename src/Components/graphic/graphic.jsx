@@ -7,9 +7,19 @@ import react from "../../Assets/sketch.png";
 import php from "../../Assets/in.png";
 import html from "../../Assets/ae.png";
 import css from "../../Assets/figma.jpeg";
+import pixlr from "../../Assets/pixlr.jpeg";
+import gravit from "../../Assets/gravit.jpeg";
+import canva from "../../Assets/canva.png";
+import procreate from "../../Assets/procreate.jpeg";
+import affinity from "../../Assets/affinity.jpeg";
 import './graphic.css'
+import { ChevronBarRight } from "react-bootstrap-icons";
+import { Link } from "react-router-dom";
 
 const Graphic = () => {
+    const scrollToTop = () => {
+      window.scrollTo(0, 0);
+    };
 
      const featured = [
        {
@@ -35,6 +45,31 @@ const Graphic = () => {
        {
          cover: php,
          name: "In Design",
+        //  total: "80 Property",
+       },
+       {
+         cover: pixlr,
+         name: "Pixlr",
+        //  total: "80 Property",
+       },
+       {
+         cover: gravit,
+         name: "Gravit Designer",
+        //  total: "80 Property",
+       },
+       {
+         cover: canva,
+         name: "Canva",
+        //  total: "80 Property",
+       },
+       {
+         cover: affinity,
+         name: "Affinity Photo",
+        //  total: "80 Property",
+       },
+       {
+         cover: procreate,
+         name: "Procreate",
         //  total: "80 Property",
        },
      ];
@@ -67,8 +102,11 @@ const Graphic = () => {
               design service.
             </p>
           </div>
-          <div className="right row">
-            <img src={img} alt="" style={{ width: "400rem" }} />
+          <div className="swing">
+            {" "}
+            <div className="right row">
+              <img src={img} alt="" style={{ width: "400rem" }} />
+            </div>
           </div>
         </div>
       </section>
@@ -82,6 +120,28 @@ const Graphic = () => {
               <label>{items.total}</label>
             </div>
           ))}
+        </div>
+      </div>
+      <div class="Bbanner">
+        <div class="banner-text">
+          <h1 className="h1">NEED AN AWESOME DESIGN?</h1>
+          <h3 className="h3">
+            We'RE HERE TO HELP<span class="call-to-action__dot">.</span>
+          </h3>
+          <h6 className="h6">
+            {" "}
+            <div class="mt-40">
+              <Link to={"/contactus"} onClick={scrollToTop}>
+                <a href="" class="button btn-lg btn-color btn-icon">
+                  <span>Get In Touch</span>
+                  <i>
+                    {" "}
+                    <ChevronBarRight />
+                  </i>
+                </a>
+              </Link>
+            </div>
+          </h6>
         </div>
       </div>
     </>

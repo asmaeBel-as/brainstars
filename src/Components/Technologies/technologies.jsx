@@ -15,9 +15,39 @@ import php from "../../Assets/download.png";
 import html from "../../Assets/html.png";
 import css from "../../Assets/css.jpeg";
 import react from "../../Assets/images (1).jpeg";
+import drupal from "../../Assets/drupal.png";
+import shopify from "../../Assets/shopify.jpeg";
+import wordpress from "../../Assets/wordpress.png";
+import joomla from "../../Assets/joomla.png";
+import { Col, Container, Row } from "react-bootstrap";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 
 const technologies = () => {
+  const CustomRightArrow = ({ onClick, ...rest }) => {
+    const {
+      onMove,
+      carouselState: { currentSlide, deviceType },
+    } = rest;
+    // onMove means if dragging or swiping in progress.
+    return (
+      <button className="arrowContainer sliderArrow" onClick={() => onClick()}>
+        <FaChevronRight />
+      </button>
+    );
+  };
+  const CustomLeftArrow = ({ onClick, ...rest }) => {
+    const {
+      onMove,
+      carouselState: { currentSlide, deviceType },
+    } = rest;
+    // onMove means if dragging or swiping in progress.
+    return (
+      <button className="arrowContainer2 sliderArrow2" onClick={() => onClick()}>
+        <FaChevronLeft />
+      </button>
+    );
+  };
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -26,14 +56,14 @@ const technologies = () => {
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3,
+      items: 4,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
       items: 2,
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 540, min: 0 },
       items: 1,
     },
   };
@@ -41,9 +71,9 @@ const technologies = () => {
   return (
     <section className="skill" id="skills">
       <img className="background-image-top" src={purpleblur} alt="" />
-      <div className="container">
-        <div className="row">
-          <div className="col-12">
+      <Container>
+        <Row>
+          <Col size={18}>
             <div className="skill-bx wow zoomIn">
               <h2>Techologies</h2>
               <p>
@@ -51,9 +81,14 @@ const technologies = () => {
                 has been the industry's standard dummy text.
               </p>
               <Carousel
+                itemClass="carousel-item-padding-40-px"
                 responsive={responsive}
                 infinite={true}
                 className=" owl-theme skill-slider"
+                containerClass="container"
+                autoPlay
+                customRightArrow={<CustomRightArrow />}
+                customLeftArrow={<CustomLeftArrow />}
               >
                 <div className="item">
                   <div className="image__container">
@@ -117,11 +152,43 @@ const technologies = () => {
 
                   <h5>java</h5>
                 </div>
+                <div className="item">
+                  <div className="image__container">
+                    {" "}
+                    <img src={drupal} alt="Image" />
+                  </div>
+
+                  <h5>Drupal</h5>
+                </div>
+                <div className="item">
+                  <div className="image__container">
+                    {" "}
+                    <img src={wordpress} alt="Image" />
+                  </div>
+
+                  <h5>Wordpress</h5>
+                </div>
+                <div className="item">
+                  <div className="image__container">
+                    {" "}
+                    <img src={shopify} alt="Image" />
+                  </div>
+
+                  <h5>Shopify</h5>
+                </div>
+                <div className="item">
+                  <div className="image__container">
+                    {" "}
+                    <img src={joomla} alt="Image" />
+                  </div>
+
+                  <h5>Joomla</h5>
+                </div>
               </Carousel>
             </div>
-          </div>
-        </div>
-      </div>
+          </Col>
+        </Row>
+      </Container>
       <img className="background-image-left" src={colorSharp} alt="Image" />
     </section>
   );
