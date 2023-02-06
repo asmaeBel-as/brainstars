@@ -271,13 +271,13 @@
   }
   .works {
     font-size: 200rem !important;
-    margin-top: -8rem;
+    margin-top: 2rem;
   }
   .works .w-left {
     font-size: 600px !important;
   }
   .works .w-right {
     transform: scale(1.5) !important;
-    margin-left: 9rem !important;
+    margin-left: 3rem !important;
   }
 }/*# sourceMappingURL=about.css.map */

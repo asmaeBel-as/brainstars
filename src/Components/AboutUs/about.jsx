@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import ScreenHeading from "../../utilities/ScrollService";
 import "./about.css";
 import vector1 from "../../Assets/Vector.png";
 import vector2 from "../../Assets/Vector0.png";
@@ -11,11 +10,11 @@ import "aos/dist/aos.css";
 import { RiQuestionFill } from "react-icons/ri";
 import { BsFillJournalBookmarkFill } from "react-icons/bs";
 import { AnimatePresence, motion } from "framer-motion/dist/framer-motion";
-import Upwork from "../../Assets/itsu.jpeg";
-import secure from "../../Assets/secure.png";
-import cloud from "../../Assets/images.png";
-import consult from "../../Assets/images (2).jpeg";
-import backup from "../../Assets/backup.jpeg";
+import Upwork from "../../Assets/mobile-app-development.png";
+import secure from "../../Assets/cg.png";
+import cloud from "../../Assets/web-app-dev.png";
+import consult from "../../Assets/stt.png";
+import backup from "../../Assets/gd.png";
 import Animations from '../../utilities/Animation'
 import ScrollService from "../../utilities/ScrollService";
 import { Link } from "react-router-dom";
@@ -115,24 +114,19 @@ const about = (props) => {
             className="w-mainCircle"
           >
             <div className="w-secCircle">
-              <img src={Upwork} alt="" />
-             
+              <img src={Upwork} alt="" style={{ width: "150%" }} />
             </div>
             <div className="w-secCircle">
-              <img src={cloud} alt="" />
-             
+              <img src={cloud} alt="" style={{ width: "150%" }} />
             </div>
             <div className="w-secCircle">
-              <img src={backup} alt="" />
-             
+              <img src={backup} alt="" style={{ width: "150%" }} />
             </div>{" "}
             <div className="w-secCircle">
-              <img src={consult} alt="" />
-             
+              <img src={consult} alt="" style={{ width: "200%" }} />
             </div>
             <div className="w-secCircle">
-              <img src={secure} alt="" />
-              
+              <img src={secure} alt="" style={{ width: "200%" }} />
             </div>
           </motion.div>
           {/* background Circles */}

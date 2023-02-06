@@ -87,6 +87,7 @@ const technologies = () => {
                 className=" owl-theme skill-slider"
                 containerClass="container"
                 autoPlay
+                autoPlaySpeed={1000}
                 customRightArrow={<CustomRightArrow />}
                 customLeftArrow={<CustomLeftArrow />}
               >
