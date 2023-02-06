@@ -19,12 +19,13 @@ const Footer = () => {
     <section className="ffooter">
       <div className="footer" id="footer">
         <div className="waves">
-          <div className="wave" id='wave1'></div>
-          <div className="wave" id='wave2'></div>
-          <div className="wave" id='wave3'></div>
-          <div className="wave" id='wave4'></div>
+          <div className="wave" id="wave1"></div>
+          <div className="wave" id="wave2"></div>
+          <div className="wave" id="wave3"></div>
+          <div className="wave" id="wave4"></div>
         </div>
-        <img src={logo} alt="" style={{width:'300px'}} />
+
+        <img src={logo} alt="" style={{ width: "300px" }} />
         <ul className="social_icon">
           <li>
             <a href="">
@@ -57,13 +58,18 @@ const Footer = () => {
         </ul>
         <ul className="menu">
           <li>
-           <Link to={'/'}> <a>Home</a></Link>
+            <Link to={"/"}>
+              {" "}
+              <a>Home</a>
+            </Link>
           </li>
           <li>
             <a href="#works">About</a>
           </li>
           <li>
-           <Link to={"/AppDev"}><a >Services</a></Link> 
+            <Link to={"/AppDev"}>
+              <a>Services</a>
+            </Link>
           </li>
           <li>
             <a href="">Technologies</a>
@@ -72,16 +78,22 @@ const Footer = () => {
             <a href="">Testimonials</a>
           </li>
           <li>
-           <Link to={'/contactus'}> <a>Contact</a></Link>
+            <Link to={"/contactus"}>
+              {" "}
+              <a>Contact</a>
+            </Link>
           </li>
           <li>
-            <Link to={'/blog'}><a>Blog</a></Link>
+            <Link to={"/blog"}>
+              <a>Blog</a>
+            </Link>
           </li>
         </ul>
         <p>
           © 2023 <strong>Brain Star Technologies</strong>. All Rights Reserved.
         </p>
       </div>
+      <div className="main"></div>
     </section>
   );
 }

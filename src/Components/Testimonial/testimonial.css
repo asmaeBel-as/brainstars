@@ -311,4 +311,28 @@
   .bcontainer {
     display: none;
   }
+}
+@media screen and (min-width: 1390px) {
+  .bcontainer .bubbles span {
+    -webkit-animation: animationard 10s linear infinite !important;
+            animation: animationard 10s linear infinite !important;
+    -webkit-animation-duration: calc(20s / var(--i)) !important;
+            animation-duration: calc(20s / var(--i)) !important;
+  }
+  @-webkit-keyframes animationard {
+    0% {
+      transform: translateY(5vh) scale(0);
+    }
+    100% {
+      transform: translateY(-44vh) scale(1);
+    }
+  }
+  @keyframes animationard {
+    0% {
+      transform: translateY(5vh) scale(0);
+    }
+    100% {
+      transform: translateY(-44vh) scale(1);
+    }
+  }
 }/*# sourceMappingURL=testimonial.css.map */

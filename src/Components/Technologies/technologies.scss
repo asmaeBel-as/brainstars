@@ -208,3 +208,32 @@
             margin-left: -8rem;
           }
   }
+        @media screen and (min-device-width: 1370px) {
+            .skill {
+                    width: 100%;
+                    margin-left: 6rem;
+                     .background-image-left {
+                                    top: 0;
+                                    position: absolute;
+                                    bottom: 0;
+                                    width: 40%;
+                                    z-index: -4;
+                                    animation: key 7s linear infinite;
+                                    margin-left: -8rem;
+                                } 
+                                .background-image-top {
+                                    top: 50%;
+                                    position: absolute;
+                
+                                    margin-top: -40rem;
+                                    margin-left: 50rem;
+                                    width: 40%;
+                                    z-index: -4;
+                                    animation: key 4s linear infinite;
+                                    margin-left: 60rem;
+                                }
+                
+                }
+                               
+                               
+        }

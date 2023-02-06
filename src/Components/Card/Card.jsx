@@ -12,10 +12,7 @@ const Card = () => {
           <div className=" cardContent grid">
             <div data-aos="fade-right" className="cardText">
               <h2>What our Wonderful clients say about us!</h2>
-              <p>
-                Beautiful testimonials recorded by our most faithful clients,
-                that we are so thankful for!{" "}
-              </p>
+             
             </div>
             <div className="videooCard">
               {" "}

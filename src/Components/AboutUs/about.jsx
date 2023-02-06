@@ -116,33 +116,23 @@ const about = (props) => {
           >
             <div className="w-secCircle">
               <img src={Upwork} alt="" />
-              <div class="overlay">
-                <div class="text">IT support</div>
-              </div>
+             
             </div>
             <div className="w-secCircle">
               <img src={cloud} alt="" />
-              <div class="overlay">
-                <div class="text">Cloud services</div>
-              </div>
+             
             </div>
             <div className="w-secCircle">
               <img src={backup} alt="" />
-              <div class="overlay">
-                <div class="text">Backup</div>
-              </div>
+             
             </div>{" "}
             <div className="w-secCircle">
               <img src={consult} alt="" />
-              <div class="overlay">
-                <div class="text">IT consulting</div>
-              </div>
+             
             </div>
             <div className="w-secCircle">
               <img src={secure} alt="" />
-              <div class="overlay">
-                <div class="text">Network security</div>
-              </div>
+              
             </div>
           </motion.div>
           {/* background Circles */}

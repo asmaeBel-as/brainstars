@@ -10,6 +10,7 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { RiTeamLine } from "react-icons/ri";
 import { ChevronBarRight } from "react-bootstrap-icons";
+import { FaConnectdevelop } from "react-icons/fa";
 
 
 
@@ -337,6 +338,11 @@ const Founders = () => {
   const [KelleyShow, setKelleyShow] = React.useState(false);
   return (
     <>
+      <h4 class="separator1">
+        <i>
+          <FaConnectdevelop />{" "}
+        </i>
+      </h4>
       {/* <section className="founders padding">
         <div className="container">
           <div

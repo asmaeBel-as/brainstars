@@ -191,4 +191,31 @@
   .background-image-left {
     margin-left: -8rem;
   }
+}
+@media screen and (min-device-width: 1370px) {
+  .skill {
+    width: 100%;
+    margin-left: 6rem;
+  }
+  .skill .background-image-left {
+    top: 0;
+    position: absolute;
+    bottom: 0;
+    width: 40%;
+    z-index: -4;
+    -webkit-animation: key 7s linear infinite;
+            animation: key 7s linear infinite;
+    margin-left: -8rem;
+  }
+  .skill .background-image-top {
+    top: 50%;
+    position: absolute;
+    margin-top: -40rem;
+    margin-left: 50rem;
+    width: 40%;
+    z-index: -4;
+    -webkit-animation: key 4s linear infinite;
+            animation: key 4s linear infinite;
+    margin-left: 60rem;
+  }
 }/*# sourceMappingURL=technologies.css.map */

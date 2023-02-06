@@ -248,11 +248,36 @@
   }
 }
 @media only screen and (min-device-width: 1400px) {
-  .awesome {
-    font-size: 100rem !important;
-  }
   .works .w-right {
     transform: scale(1.2) !important;
     margin-left: 20rem !important;
+  }
+}
+@media screen and (min-device-width: 1490px) {
+  .works {
+    font-size: 200rem !important;
+  }
+  .works .w-left {
+    font-size: 600px !important;
+  }
+  .works .w-right {
+    transform: scale(1.5) !important;
+    margin-left: 40rem !important;
+  }
+}
+@media screen and (min-device-width: 1490px) {
+  .awesome > :nth-child(3) {
+    font-size: 1.2rem;
+  }
+  .works {
+    font-size: 200rem !important;
+    margin-top: -8rem;
+  }
+  .works .w-left {
+    font-size: 600px !important;
+  }
+  .works .w-right {
+    transform: scale(1.5) !important;
+    margin-left: 9rem !important;
   }
 }/*# sourceMappingURL=about.css.map */

@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../../Assets/digital.png";
+import img from "../../Assets/digital.jpg";
 import Back from "../common/back";
 import Heading from "../common/Heading";
 import flutter from "../../Assets/email.png";

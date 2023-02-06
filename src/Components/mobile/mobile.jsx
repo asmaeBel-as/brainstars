@@ -147,4 +147,4 @@ const Mobile = () => {
     </>
   );
 };
-export default Mobile;
+export default Mobile;  

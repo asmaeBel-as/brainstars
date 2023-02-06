@@ -252,7 +252,7 @@
      }
  }
 
- 
+
  @keyframes work-blueCircle {
      from {
          transform: translateY(15rem);
@@ -275,7 +275,7 @@
          margin-left: -13rem;
          margin-top: 10rem !important;
          padding-bottom: -10rem !important;
-      
+
          gap: -2;
 
          .achievement {
@@ -299,33 +299,36 @@
          margin-left: -14rem;
          margin-top: 10rem !important;
 
-    .achievement{
-        span{
-            font-size: 20px;
-        }
-            .circle {
-            width: 4rem !important;
-            height: 4rem !important;}
-        }
+         .achievement {
+             span {
+                 font-size: 20px;
+             }
+
+             .circle {
+                 width: 4rem !important;
+                 height: 4rem !important;
+             }
+         }
 
      }
-    
-     
+
+
  }
 
  @media only screen and (min-device-width:768px) and (max-device-width: 912px) {
-    .separator {
-            margin-top: -25rem;
-        }
+     .separator {
+         margin-top: -25rem;
+     }
+
      .experience {
-        //  margin-top: -25rem !important;
+         //  margin-top: -25rem !important;
          margin-left: -10rem;
 
-         .achievement{
-            .circle{
-                width: 6rem;
-                height: 6rem;
-            }
+         .achievement {
+             .circle {
+                 width: 6rem;
+                 height: 6rem;
+             }
          }
 
      }
@@ -344,18 +347,48 @@
  @media only screen and (device-width:1024px) {
      .experience {
 
-        //  margin-left: -2rem;
+         //  margin-left: -2rem;
          margin-left: -10rem;
-        //  margin-top: 20rem !important;
+         //  margin-top: 20rem !important;
 
      }
  }
 
  @media screen and (device-width: 540px) {
-    .experience {
-    
-          
-            margin-left: -6rem !important;
-    
-        }
+     .experience {
+
+
+         margin-left: -6rem !important;
+
+     }
+ }
+
+ @media screen and (min-device-width: 1400px) {
+     .experience {
+
+
+         justify-items: center;
+         text-align: center;
+         justify-content: center;
+
+         .background-image-left {
+             top: 33%;
+             position: absolute;
+             bottom: 0;
+             width: 40%;
+             z-index: -4;
+             margin-top: 60rem !important;
+             margin-left: -60rem !important;
+
+         }
+
+         .background-image-top {
+             top: 46%;
+             position: absolute;
+             margin-top: -15rem;
+             margin-left: 70rem !important;
+             width: 40%;
+             z-index: -4;
+         }
+     }
  }

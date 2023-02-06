@@ -277,4 +277,31 @@
   .bubbleContainer {
     display: none;
   }
+}
+@media screen and (min-device-width: 1390px) {
+  .card {
+    margin-top: 5rem !important;
+  }
+  .bubbleContainer .bubbles span {
+    -webkit-animation: animationcard 10s linear infinite !important;
+            animation: animationcard 10s linear infinite !important;
+    -webkit-animation-duration: calc(20s / var(--i)) !important;
+            animation-duration: calc(20s / var(--i)) !important;
+  }
+  @-webkit-keyframes animationcard {
+    0% {
+      transform: translateY(5vh) scale(0);
+    }
+    100% {
+      transform: translateY(-55vh) scale(1);
+    }
+  }
+  @keyframes animationcard {
+    0% {
+      transform: translateY(5vh) scale(0);
+    }
+    100% {
+      transform: translateY(-55vh) scale(1);
+    }
+  }
 }/*# sourceMappingURL=card.css.map */

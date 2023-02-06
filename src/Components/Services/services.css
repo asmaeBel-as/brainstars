@@ -27,6 +27,29 @@
   font-size: 1.5rem;
 }
 
+.separator {
+  text-align: center;
+  margin-bottom: -21rem;
+  margin-top: 20rem;
+}
+
+.separator::before,
+.separator::after {
+  content: " ";
+  display: inline-block;
+  border-top: 2px solid #333;
+  padding-bottom: 4px;
+  width: 15%;
+}
+
+.separator::before {
+  margin-right: 12px;
+}
+
+.separator::after {
+  margin-left: 12px;
+}
+
 .services {
   display: flex;
   height: 30rem;

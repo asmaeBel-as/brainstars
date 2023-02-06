@@ -74,6 +74,7 @@
     border-radius: 50px 50px 50px 0px;
     margin: 1rem;
     z-index: 9999;
+    
 
 }
 
@@ -83,6 +84,8 @@
     font-weight: 600;
     margin: 0 0 10px;
     font-style: italic;
+
+    
 }
 
 .testimonial-section .testi-item p .quote {
@@ -363,4 +366,31 @@
     .bcontainer{
         display: none;
     }
+ }
+ @media screen and (min-width: 1390px) {
+    .testimonial-section {
+        // height: 50% !important;
+    }
+    .bcontainer{
+      
+                .bubbles {
+                    span {
+        
+                        animation: animationard 10s linear infinite !important;
+                        animation-duration: calc(20s/var(--i)) !important;
+        
+                    }
+                }
+        
+            }
+        
+            @keyframes animationard {
+                0% {
+                    transform: translateY(5vh) scale(0);
+                }
+        
+                100% {
+                    transform: translateY(-44vh) scale(1);
+                }
+            }
  }

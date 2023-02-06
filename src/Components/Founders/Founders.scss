@@ -10,6 +10,28 @@
       --orangeCard: rgba(252, 166, 31, 0.45);
       --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
   }
+   .separator1 {
+       text-align: center;
+       margin-bottom: 5rem;
+      margin-top: -5rem;
+   }
+
+   .separator1::before,
+   .separator1::after {
+       content: " ";
+       display: inline-block;
+       border-top: 2px solid #333;
+       padding-bottom: 4px;
+       width: 15%;
+   }
+
+   .separator1::before {
+       margin-right: 12px;
+   }
+
+   .separator1::after {
+       margin-left: 12px;
+   }
 
   .relative__container {
       width: 100%;

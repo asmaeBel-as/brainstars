@@ -148,12 +148,6 @@
     transform: translateY(-20px);
   }
 }
-.img {
-  width: 40rem;
-  margin-left: -5rem;
-  margin-top: 2rem;
-}
-
 @-webkit-keyframes kkey {
   from {
     transform: translateX(0px);
@@ -162,7 +156,6 @@
     transform: translateX(calc(100vw - 10vmin));
   }
 }
-
 @keyframes kkey {
   from {
     transform: translateX(0px);
@@ -217,10 +210,5 @@
   .banner .img {
     width: 90%;
     margin-left: 2rem;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .banner .img {
-    width: 150%;
   }
 }/*# sourceMappingURL=home.css.map */
