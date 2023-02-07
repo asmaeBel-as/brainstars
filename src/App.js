@@ -20,6 +20,7 @@ import Mobile from './Components/mobile/mobile';
 import Web from './Components/web/web';
 import Graphic from './Components/graphic/graphic';
 import Digital from './Components/digital/digital';
+import Companies from "./Components/Companies/companies";
 
 
 function App() {
@@ -44,11 +45,14 @@ function App() {
                   <Outlet />
                   <Home />
                   <AboutUs />
+                  
                   <Founders />
+                  <Companies />
                   <Services />
                   <Counter />
                   <Card />
                   <Technologies />
+                 
                   <Testimonials />
                   <Footer />
                  

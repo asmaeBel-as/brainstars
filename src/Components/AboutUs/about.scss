@@ -289,21 +289,20 @@
             }
       }
   }
-  @media screen and (min-device-width: 1490px) {
-     .awesome{
-        &> :nth-child(3) {
-                // color: var(--orange);
-                font-size: 1.2rem;
-                // font-weight: bold;
-            }
-           }
+
+           
+        
+     
+
+  @media screen and (min-device-width: 1920px) {
+    
 
            
         
       .works {
-        font-size: 200rem !important;
+        // font-size: 200rem !important;
         //  padding-left: rem;
-        margin-top: 2rem;
+        margin-top: 8rem;
        .w-left{
                 font-size: 600px !important;
                
@@ -312,7 +311,7 @@
           
         .w-right {
                 transform: scale(1.5) !important;
-                 margin-left: 3rem !important;
+                 margin-left: 4rem !important;
                 
             }
       }

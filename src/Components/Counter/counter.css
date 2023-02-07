@@ -327,4 +327,29 @@
     width: 40%;
     z-index: -4;
   }
+}
+@media screen and (device-width: 1920px) {
+  .experience {
+    justify-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-left: 10rem;
+  }
+  .experience .background-image-left {
+    top: 33%;
+    position: absolute;
+    bottom: 0;
+    width: 40%;
+    z-index: -4;
+    margin-top: 60rem !important;
+    margin-left: -60rem !important;
+  }
+  .experience .background-image-top {
+    top: 46%;
+    position: absolute;
+    margin-top: -15rem;
+    margin-left: 70rem !important;
+    width: 40%;
+    z-index: -4;
+  }
 }/*# sourceMappingURL=counter.css.map */

@@ -265,19 +265,15 @@
     margin-left: 40rem !important;
   }
 }
-@media screen and (min-device-width: 1490px) {
-  .awesome > :nth-child(3) {
-    font-size: 1.2rem;
-  }
+@media screen and (min-device-width: 1920px) {
   .works {
-    font-size: 200rem !important;
-    margin-top: 2rem;
+    margin-top: 8rem;
   }
   .works .w-left {
     font-size: 600px !important;
   }
   .works .w-right {
     transform: scale(1.5) !important;
-    margin-left: 3rem !important;
+    margin-left: 4rem !important;
   }
 }/*# sourceMappingURL=about.css.map */
