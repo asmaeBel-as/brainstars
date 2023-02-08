@@ -269,11 +269,14 @@
   .works {
     margin-top: 8rem;
   }
-  .works .w-left {
+  .w-left {
     font-size: 600px !important;
   }
-  .works .w-right {
+  .w-left:nth-child(3) {
+    font-size: 150rem;
+  }
+  .w-left .w-right {
     transform: scale(1.5) !important;
-    margin-left: 4rem !important;
+    margin-left: -10rem !important;
   }
 }/*# sourceMappingURL=about.css.map */

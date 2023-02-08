@@ -300,18 +300,20 @@
            
         
       .works {
-        // font-size: 200rem !important;
-        //  padding-left: rem;
+        
         margin-top: 8rem;
+
+        }
        .w-left{
                 font-size: 600px !important;
-               
+                       &:nth-child(3){
+font-size: 150rem;
        }
        
           
         .w-right {
                 transform: scale(1.5) !important;
-                 margin-left: 4rem !important;
+                 margin-left: -10rem !important;
                 
             }
       }

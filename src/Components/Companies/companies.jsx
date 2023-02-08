@@ -10,6 +10,7 @@ import Carousel from "react-multi-carousel";
 import './companies.css'
 import { FaConnectdevelop } from 'react-icons/fa';
 
+
 const companies = () => {
 const CustomDot = ({ onClick, ...rest }) => {
   const {
