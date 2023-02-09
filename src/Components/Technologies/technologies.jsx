@@ -2,15 +2,15 @@ import meter1 from "../../Assets/meter1.svg";
 import meter2 from "../../Assets/meter2.svg";
 import meter3 from "../../Assets/meter3.svg";
 import Carousel from "react-multi-carousel";
-import flutter from '../../Assets/flutter.png'
-import kotlin from '../../Assets/kotlin.jpeg'
+import flutter from "../../Assets/flutter.png";
+import kotlin from "../../Assets/kotlin.jpeg";
 import swift from "../../Assets/swift-og.png";
 import java from "../../Assets/java.png";
 import purpleblur from "../../Assets/bgcolor - Copy.png";
 import "react-multi-carousel/lib/styles.css";
 import React from "react";
 import colorSharp from "../../Assets/bgcolor.png";
-import './technologies.css'
+import "./technologies.css";
 import php from "../../Assets/download.png";
 import html from "../../Assets/html.png";
 import css from "../../Assets/css.jpeg";
@@ -21,7 +21,6 @@ import wordpress from "../../Assets/wordpress.png";
 import joomla from "../../Assets/joomla.png";
 import { Col, Container, Row } from "react-bootstrap";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-
 
 const technologies = () => {
   const CustomRightArrow = ({ onClick, ...rest }) => {
@@ -43,7 +42,10 @@ const technologies = () => {
     } = rest;
     // onMove means if dragging or swiping in progress.
     return (
-      <button className="arrowContainer2 sliderArrow2" onClick={() => onClick()}>
+      <button
+        className="arrowContainer2 sliderArrow2"
+        onClick={() => onClick()}
+      >
         <FaChevronLeft />
       </button>
     );

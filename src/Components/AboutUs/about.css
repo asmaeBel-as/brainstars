@@ -262,7 +262,7 @@
   }
   .works .w-right {
     transform: scale(1.5) !important;
-    margin-left: 40rem !important;
+    margin-left: 10rem !important;
   }
 }
 @media screen and (min-device-width: 1920px) {
