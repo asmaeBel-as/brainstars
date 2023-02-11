@@ -443,24 +443,15 @@
 }
 
 .typing-indicator span:nth-of-type(1) {
-  -webkit-animation: 1s blink infinite 0.33333s;
-          animation: 1s blink infinite 0.33333s;
+  animation: 1s blink infinite 0.33333s;
 }
 
 .typing-indicator span:nth-of-type(2) {
-  -webkit-animation: 1s blink infinite 0.66666s;
-          animation: 1s blink infinite 0.66666s;
+  animation: 1s blink infinite 0.66666s;
 }
 
 .typing-indicator span:nth-of-type(3) {
-  -webkit-animation: 1s blink infinite 0.99999s;
-          animation: 1s blink infinite 0.99999s;
-}
-
-@-webkit-keyframes blink {
-  50% {
-    opacity: 1;
-  }
+  animation: 1s blink infinite 0.99999s;
 }
 
 @keyframes blink {

@@ -16,7 +16,6 @@ import css from "../../Assets/viral.png";
 import "./digital.css";
 import { ChevronBarRight } from "react-bootstrap-icons";
 import { Link } from "react-router-dom";
-
 const Digital = () => {
       const scrollToTop = () => {
         window.scrollTo(0, 0);
@@ -80,7 +79,6 @@ const Digital = () => {
         <div className="container flex mtop">
           <div className="left row">
             <Heading title="DIGITAL MARKETING" subtitle="What We Provide? ?" />
-
             <p>
               Brain star technologies provide a wide range of digital marketing
               services (DMS), including SEO, SMM, and SEM, to help businesses
@@ -106,7 +104,6 @@ const Digital = () => {
           </div>
         </div>
       </section>
-
       <div className="featured container">
         <div className="content grid5 mtop">
           {featured.map((items, index) => (

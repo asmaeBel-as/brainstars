@@ -338,7 +338,7 @@ const Founders = () => {
   const [KelleyShow, setKelleyShow] = React.useState(false);
   return (
     <>
-      <h4 class="separator1">
+      <h4 class="separatorf">
         <i>
           <FaConnectdevelop />{" "}
         </i>

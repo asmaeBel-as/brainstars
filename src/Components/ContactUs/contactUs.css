@@ -5,26 +5,13 @@
 
 .contact img {
   width: 92%;
-  -webkit-animation: updown 3s linear infinite;
-          animation: updown 3s linear infinite;
+  animation: updown 3s linear infinite;
   user-drag: none;
   user-select: none;
   -moz-user-select: none;
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-}
-
-@-webkit-keyframes updown {
-  0% {
-    transform: translateY(-20px);
-  }
-  50% {
-    transform: translateY(20px);
-  }
-  100% {
-    transform: translateY(-20px);
-  }
 }
 
 @keyframes updown {
@@ -72,12 +59,6 @@
   color: #fff;
 }
 
-.contact form input:-ms-input-placeholder, .contact form textarea:-ms-input-placeholder {
-  font-size: 16px;
-  font-weight: 400;
-  color: #fff;
-}
-
 .contact form input::placeholder,
 .contact form textarea::placeholder {
   font-size: 16px;
@@ -86,11 +67,6 @@
 }
 
 .contact form input:focus::-moz-placeholder, .contact form textarea:focus::-moz-placeholder {
-  color: #121212;
-  opacity: 0.8;
-}
-
-.contact form input:focus:-ms-input-placeholder, .contact form textarea:focus:-ms-input-placeholder {
   color: #121212;
   opacity: 0.8;
 }

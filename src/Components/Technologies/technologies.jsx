@@ -21,8 +21,20 @@ import wordpress from "../../Assets/wordpress.png";
 import joomla from "../../Assets/joomla.png";
 import { Col, Container, Row } from "react-bootstrap";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 const technologies = () => {
+  let location = useLocation();
+  useEffect(() => {
+    if (location.hash) {
+      let elem = document.getElementById(location.hash.slice(1));
+      if (elem) {
+        elem.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    }
+  }, [location]);
   const CustomRightArrow = ({ onClick, ...rest }) => {
     const {
       onMove,
@@ -69,7 +81,6 @@ const technologies = () => {
       items: 1,
     },
   };
-
   return (
     <section className="skill" id="skills">
       <img className="background-image-top" src={purpleblur} alt="" />
@@ -98,7 +109,6 @@ const technologies = () => {
                     {" "}
                     <img src={flutter} alt="Image" />
                   </div>
-
                   <h5>Flutter</h5>
                 </div>
                 <div className="item">
@@ -106,7 +116,6 @@ const technologies = () => {
                     {" "}
                     <img src={php} alt="Image" />
                   </div>
-
                   <h5>PHP</h5>
                 </div>
                 <div className="item">
@@ -121,7 +130,6 @@ const technologies = () => {
                     {" "}
                     <img src={react} alt="Image" />
                   </div>
-
                   <h5>React</h5>
                 </div>
                 <div className="item">
@@ -129,7 +137,6 @@ const technologies = () => {
                     {" "}
                     <img src={css} alt="Image" />
                   </div>
-
                   <h5>CSS</h5>
                 </div>
                 <div className="item">
@@ -137,14 +144,12 @@ const technologies = () => {
                     {" "}
                     <img src={kotlin} alt="Image" />
                   </div>
-
                   <h5>Kotlin</h5>
                 </div>
                 <div className="item">
                   <div className="image__container">
                     <img src={swift} alt="Image" />
                   </div>
-
                   <h5>Swift</h5>
                 </div>
                 <div className="item">
@@ -152,7 +157,6 @@ const technologies = () => {
                     {" "}
                     <img src={java} alt="Image" />
                   </div>
-
                   <h5>java</h5>
                 </div>
                 <div className="item">
@@ -160,7 +164,6 @@ const technologies = () => {
                     {" "}
                     <img src={drupal} alt="Image" />
                   </div>
-
                   <h5>Drupal</h5>
                 </div>
                 <div className="item">
@@ -168,7 +171,6 @@ const technologies = () => {
                     {" "}
                     <img src={wordpress} alt="Image" />
                   </div>
-
                   <h5>Wordpress</h5>
                 </div>
                 <div className="item">
@@ -176,7 +178,6 @@ const technologies = () => {
                     {" "}
                     <img src={shopify} alt="Image" />
                   </div>
-
                   <h5>Shopify</h5>
                 </div>
                 <div className="item">
@@ -184,7 +185,6 @@ const technologies = () => {
                     {" "}
                     <img src={joomla} alt="Image" />
                   </div>
-
                   <h5>Joomla</h5>
                 </div>
               </Carousel>
@@ -196,5 +196,4 @@ const technologies = () => {
     </section>
   );
 };
-
 export default technologies;

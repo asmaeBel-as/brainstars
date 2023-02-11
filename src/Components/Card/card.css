@@ -91,10 +91,8 @@
   margin: 0 4px;
   border-radius: 50%;
   box-shadow: 0 0 0 10px rgba(79, 195, 220, 0.2666666667), 0 0 50px #4FC3DC, 0 0 100px #4FC3DC;
-  -webkit-animation: animate 10s linear infinite !important;
-          animation: animate 10s linear infinite !important;
-  -webkit-animation-duration: calc(20s / var(--i)) !important;
-          animation-duration: calc(20s / var(--i)) !important;
+  animation: animate 10s linear infinite !important;
+  animation-duration: calc(20s / var(--i)) !important;
 }
 .bubbleContainer .bubbles span:nth-child(even) {
   background: var(--orange);
@@ -224,15 +222,6 @@
   --i: 25;
 }
 
-@-webkit-keyframes animate {
-  0% {
-    transform: translateY(5vh) scale(0);
-  }
-  100% {
-    transform: translateY(-90vh) scale(1);
-  }
-}
-
 @keyframes animate {
   0% {
     transform: translateY(5vh) scale(0);
@@ -271,7 +260,7 @@
     margin-top: 15rem;
   }
 }
-@media screen and (min-device-width: 820px) and (max-device-width: 1024px) {
+@media screen and (min-device-width: 767px) and (max-device-width: 1024px) {
   .card {
     margin-top: 5rem !important;
   }
@@ -284,18 +273,8 @@
     margin-top: 5rem !important;
   }
   .bubbleContainer .bubbles span {
-    -webkit-animation: animationcard 10s linear infinite !important;
-            animation: animationcard 10s linear infinite !important;
-    -webkit-animation-duration: calc(20s / var(--i)) !important;
-            animation-duration: calc(20s / var(--i)) !important;
-  }
-  @-webkit-keyframes animationcard {
-    0% {
-      transform: translateY(5vh) scale(0);
-    }
-    100% {
-      transform: translateY(-55vh) scale(1);
-    }
+    animation: animationcard 10s linear infinite !important;
+    animation-duration: calc(20s / var(--i)) !important;
   }
   @keyframes animationcard {
     0% {
@@ -303,6 +282,20 @@
     }
     100% {
       transform: translateY(-55vh) scale(1);
+    }
+  }
+}
+@media screen and (device-width: 1280px) {
+  .bubbleContainer .bubbles span {
+    animation: anime 10s linear infinite !important;
+    animation-duration: calc(20s / var(--i)) !important;
+  }
+  @keyframes anime {
+    0% {
+      transform: translateY(5vh) scale(0);
+    }
+    100% {
+      transform: translateY(-60vh) scale(1);
     }
   }
 }/*# sourceMappingURL=card.css.map */

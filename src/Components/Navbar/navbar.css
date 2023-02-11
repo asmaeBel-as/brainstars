@@ -104,27 +104,27 @@
 
 @media screen and (min-width: 1280px) {
   .toggleNavbar,
-.closeNavbar {
+  .closeNavbar {
     display: none;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1279px) {
   .header-links {
     margin-right: -6rem;
   }
   .navBar {
-    background: var(--greyBg);
+    background: var(--black);
     position: absolute;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
+    height: 130vh;
     width: 100%;
-    padding: 1rem;
+    padding: 0.2rem;
     top: 0;
     left: -500%;
     z-index: 2000;
     box-shadow: 0 2px 4px rgba(209, 209, 209, 0.904);
     transition: 0.5s ease-in-out;
+    -webkit-clip-path: circle(115vh at 50% -50vh);
+            clip-path: circle(115vh at 50% -50vh);
   }
   .navBar .navLists {
     display: flex;
@@ -132,19 +132,21 @@
     justify-content: center;
     width: 100%;
     align-items: center;
-    margin: auto;
-    padding: 0.5rem 0;
+    margin-top: 2rem;
+    padding: 0.3rem 0;
   }
   .navBar .navLists .navItem {
-    padding: 0.5rem 0;
+    padding: 0rem 0;
   }
   .navBar .navLists .navItem .navLink {
-    color: var(--textColor);
+    color: rgb(255, 255, 255);
     font-size: 0.9rem;
     font-weight: 600;
+    opacity: 1;
+    transform: scale(1) translateY(0px) translateX(0px) rotate(0deg);
   }
   .navBar .navLists .navItem .navLink:hover {
-    color: var(--PrimaryColor);
+    color: white;
   }
   .navBar .navLists .headerBtns {
     flex-direction: column;
@@ -176,10 +178,10 @@
     position: absolute;
     top: 1rem;
     right: 1.5rem;
-    color: var(--PrimaryColor);
+    color: white;
   }
   .navBar .closeNavbar:hover .icon {
-    color: var(--SecondaryColor);
+    color: rgb(156, 151, 151);
   }
   .activeNavbar {
     left: 0%;

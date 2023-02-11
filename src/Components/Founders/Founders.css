@@ -11,14 +11,14 @@
   --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
 }
 
-.separator1 {
+.separatorf {
   text-align: center;
   margin-bottom: 5rem;
   margin-top: -5rem;
 }
 
-.separator1::before,
-.separator1::after {
+.separatorf::before,
+.separatorf::after {
   content: " ";
   display: inline-block;
   border-top: 2px solid #333;
@@ -26,11 +26,11 @@
   width: 15%;
 }
 
-.separator1::before {
+.separatorf::before {
   margin-right: 12px;
 }
 
-.separator1::after {
+.separatorf::after {
   margin-left: 12px;
 }
 
@@ -313,6 +313,11 @@ spane {
 }
 
 @media screen and (max-width: 600px) {
+  .separatorf {
+    text-align: center;
+    margin-bottom: 33rem;
+    margin-top: -30rem;
+  }
   .program__headf {
     margin-top: -30rem;
     margin-bottom: 25rem;
@@ -328,6 +333,11 @@ spane {
   }
 }
 @media screen and (min-device-width: 768px) and (max-device-width: 912px) {
+  .separatorf {
+    text-align: center;
+    margin-bottom: 15rem;
+    margin-top: -10rem;
+  }
   .founderModal {
     height: 200rem !important;
     margin-top: -50rem;
@@ -413,9 +423,6 @@ spane {
   }
 }
 @media only screen and (device-width: 1024px) {
-  .program__headf {
-    margin-top: -25rem;
-  }
   .founders {
     margin-top: -2rem;
   }

@@ -8,16 +8,14 @@ import SecCard from "../SecCard/SecCard";
 import { AnimatePresence, motion } from "framer-motion/dist/framer-motion";
 import { Link } from "react-router-dom";
 import { FaConnectdevelop } from "react-icons/fa";
-
 const services = () => {
   const transition = { duration: 2, type: "spring" };
   const scrollToTop = () => {
-    window.scrollTo(0, 0)
-}
-
+    window.scrollTo(0, 0);
+  };
   return (
     <>
-       <h4 class="separator1">
+      <h4 class="separator1">
         <i>
           <FaConnectdevelop />{" "}
         </i>
@@ -32,7 +30,6 @@ const services = () => {
               Our Services
             </h2>
           </div>
-
           <div className="services">
             <div className="awesome">
               <span data-aos="fade-down" data-aos-duration="2000">
@@ -87,7 +84,6 @@ const services = () => {
                   />
                 </Link>
               </motion.div>
-
               <motion.div
                 whileInView={{ left: "-7rem" }}
                 initial={{ left: "-14rem" }}
@@ -159,5 +155,4 @@ const services = () => {
     </>
   );
 };
-
 export default services;

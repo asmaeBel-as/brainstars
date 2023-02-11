@@ -146,10 +146,8 @@
   margin: 0 4px;
   border-radius: 50%;
   box-shadow: 0 0 0 10px rgba(79, 195, 220, 0.2666666667), 0 0 50px #4FC3DC, 0 0 100px #4FC3DC;
-  -webkit-animation: animation 10s linear infinite !important;
-          animation: animation 10s linear infinite !important;
-  -webkit-animation-duration: calc(30s / var(--i)) !important;
-          animation-duration: calc(30s / var(--i)) !important;
+  animation: animation 10s linear infinite !important;
+  animation-duration: calc(30s / var(--i)) !important;
 }
 .bcontainer .bubbles span:nth-child(even) {
   background: var(--orange);
@@ -279,15 +277,6 @@
   --i: 25;
 }
 
-@-webkit-keyframes animation {
-  0% {
-    transform: translateY(5vh) scale(0);
-  }
-  100% {
-    transform: translateY(-80vh) scale(1);
-  }
-}
-
 @keyframes animation {
   0% {
     transform: translateY(5vh) scale(0);
@@ -314,18 +303,8 @@
 }
 @media screen and (min-width: 1390px) {
   .bcontainer .bubbles span {
-    -webkit-animation: animationard 10s linear infinite !important;
-            animation: animationard 10s linear infinite !important;
-    -webkit-animation-duration: calc(20s / var(--i)) !important;
-            animation-duration: calc(20s / var(--i)) !important;
-  }
-  @-webkit-keyframes animationard {
-    0% {
-      transform: translateY(5vh) scale(0);
-    }
-    100% {
-      transform: translateY(-44vh) scale(1);
-    }
+    animation: animationard 10s linear infinite !important;
+    animation-duration: calc(20s / var(--i)) !important;
   }
   @keyframes animationard {
     0% {
@@ -333,6 +312,20 @@
     }
     100% {
       transform: translateY(-44vh) scale(1);
+    }
+  }
+}
+@media screen and (width: 1280px) {
+  .bcontainer .bubbles span {
+    animation: ard 10s linear infinite !important;
+    animation-duration: calc(20s / var(--i)) !important;
+  }
+  @keyframes ard {
+    0% {
+      transform: translateY(10vh) scale(0);
+    }
+    100% {
+      transform: translateY(-60vh) scale(1);
     }
   }
 }/*# sourceMappingURL=testimonial.css.map */

@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animation";
@@ -16,17 +15,26 @@ import { FaQuoteLeft } from "react-icons/fa";
 import { FaStarHalfAlt } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
 import { GiTalk } from "react-icons/gi";
-
+import { useLocation } from "react-router-dom";
 export default function Testimonial(props) {
+  let location = useLocation();
+  useEffect(() => {
+    if (location.hash) {
+      let elem = document.getElementById(location.hash.slice(1));
+      if (elem) {
+        elem.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    }
+  }, [location]);
   let fadeInScreenHandler = (screen) => {
     if (screen.fadeInScreen !== props.id) return;
     Animations.animations.fadeInScreen(props.id);
   };
-
   const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(
     fadeInScreenHandler
   );
-
   const options = {
     loop: true,
     margin: 0,
@@ -48,7 +56,6 @@ export default function Testimonial(props) {
       },
     },
   };
-
   return (
     <div>
       <div className="program__headste">
@@ -99,7 +106,6 @@ export default function Testimonial(props) {
                   </div>
                 </div>
               </div>
-
               <div className="col-lg-12">
                 <div className="testi-item">
                   <div className="testi-comment">
@@ -236,7 +242,6 @@ export default function Testimonial(props) {
             <span></span>
             <span></span>
             <span></span>
-
             <span></span>
             <span></span>
             <span></span>

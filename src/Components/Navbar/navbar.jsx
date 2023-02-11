@@ -9,11 +9,14 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { TbGridDots } from "react-icons/tb";
-import { Facebook, Instagram, Linkedin, Twitter, Whatsapp } from "react-bootstrap-icons";
-
+import {
+  Facebook,
+  Instagram,
+  Linkedin,
+  Twitter,
+  Whatsapp,
+} from "react-bootstrap-icons";
 const Navbar = () => {
-
-  
   const [active, setActive] = useState("navBar");
   const showNav = () => {
     setActive("navBar activeNavbar");
@@ -21,7 +24,6 @@ const Navbar = () => {
   const removeNav = () => {
     setActive("navBar");
   };
-
   //code statement to add a background color to the header.
   const [transparent, setTransparent] = useState("header");
   const addBg = () => {
@@ -32,7 +34,6 @@ const Navbar = () => {
     }
   };
   window.addEventListener("scroll", addBg);
-
   return (
     <section className="navBarSection">
       <div id="top-header">
@@ -82,7 +83,6 @@ const Navbar = () => {
             <img src={logo} alt="" style={{ width: "200px" }} />
           </NavLink>
         </div>
-
         <div className={active}>
           <ul onClick={removeNav} className="navLists ">
             <li className="navItem">
@@ -91,9 +91,13 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li className="navItem">
-              <a href="#works" className="navLink">
+              <NavLink
+                to={{ pathname: "/", hash: "#works" }}
+                exact
+                className="navLink"
+              >
                 About Us
-              </a>
+              </NavLink>
             </li>
             <li className="navItem">
               <NavLink to="/AppDev" exact className="navLink">
@@ -101,14 +105,22 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li className="navItem">
-              <a href="#skills" exact className="navLink">
+              <NavLink
+                to={{ pathname: "/", hash: "#skills" }}
+                exact
+                className="navLink"
+              >
                 Technologies{" "}
-              </a>
+              </NavLink>
             </li>
             <li className="navItem">
-              <a href="#testimonials" className="navLink">
+              <NavLink
+                to={{ pathname: "/", hash: "#testimonials" }}
+                exact
+                className="navLink"
+              >
                 Testimonials
-              </a>
+              </NavLink>
             </li>
             <li className="navItem">
               <NavLink to="/contactus" exact className="navLink">
@@ -125,7 +137,6 @@ const Navbar = () => {
             <AiFillCloseCircle className="icon" />
           </div>
         </div>
-
         <div onClick={showNav} className="toggleNavbar">
           <TbGridDots className="icon" />
         </div>
@@ -133,5 +144,4 @@ const Navbar = () => {
     </section>
   );
 };
-
 export default Navbar;

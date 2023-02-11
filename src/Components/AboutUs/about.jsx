@@ -15,26 +15,34 @@ import secure from "../../Assets/cg.png";
 import cloud from "../../Assets/web-app-dev.png";
 import consult from "../../Assets/stt.png";
 import backup from "../../Assets/gd.png";
-import Animations from '../../utilities/Animation'
+import Animations from "../../utilities/Animation";
 import ScrollService from "../../utilities/ScrollService";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 const about = (props) => {
-
-   let fadeInScreenHandler = (screen) => {
-     if (screen.fadeInScreen !== props.id) return;
-     Animations.animations.fadeInScreen(props.id);
-   };
-
+  let location = useLocation();
+  useEffect(() => {
+    if (location.hash) {
+      let elem = document.getElementById(location.hash.slice(1));
+      if (elem) {
+        elem.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    }
+  }, [location]);
+  let fadeInScreenHandler = (screen) => {
+    if (screen.fadeInScreen !== props.id) return;
+    Animations.animations.fadeInScreen(props.id);
+  };
   const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(
     fadeInScreenHandler
   );
   useEffect(() => {
     Aos.init({ duration: 2000 });
-  }, []); 
+  }, []);
   const scrollToTop = () => {
     window.scrollTo(0, 0);
   };
-
   const transition = { duration: 2, type: "spring" };
   return (
     <section className="about-us-container fade-in ">
@@ -46,7 +54,6 @@ const about = (props) => {
           About Us
         </h2>
       </div>
-
       <div className="works" id="works">
         {/* left side */}
         <div className="w-left">
@@ -82,7 +89,6 @@ const about = (props) => {
               and call us today!
               <br />
             </spane>
-
             <Link
               onClick={scrollToTop}
               to={"./contactus"}
@@ -92,13 +98,11 @@ const about = (props) => {
             >
               Contact Us{" "}
             </Link>
-
             <div
               className="blur s-blur1"
               style={{ background: "#ABF1FF94" }}
             ></div>
           </div>
-
           {/* right side */}
         </div>
         <div
@@ -145,5 +149,4 @@ const about = (props) => {
     </section>
   );
 };
-
-export default  about;
+export default about;

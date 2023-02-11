@@ -112,8 +112,7 @@
   bottom: 0;
   width: 40%;
   z-index: -4;
-  -webkit-animation: key 7s linear infinite;
-          animation: key 7s linear infinite;
+  animation: key 7s linear infinite;
 }
 
 .background-image-top {
@@ -123,20 +122,7 @@
   margin-left: 50rem;
   width: 40%;
   z-index: -4;
-  -webkit-animation: key 4s linear infinite;
-          animation: key 4s linear infinite;
-}
-
-@-webkit-keyframes key {
-  0% {
-    transform: translateY(-20px);
-  }
-  50% {
-    transform: translateY(80px);
-  }
-  100% {
-    transform: translateY(-20px);
-  }
+  animation: key 4s linear infinite;
 }
 
 @keyframes key {
@@ -203,8 +189,7 @@
     bottom: 0;
     width: 40%;
     z-index: -4;
-    -webkit-animation: key 7s linear infinite;
-            animation: key 7s linear infinite;
+    animation: key 7s linear infinite;
     margin-left: -8rem;
   }
   .skill .background-image-top {
@@ -214,8 +199,7 @@
     margin-left: 50rem;
     width: 40%;
     z-index: -4;
-    -webkit-animation: key 4s linear infinite;
-            animation: key 4s linear infinite;
+    animation: key 4s linear infinite;
     margin-left: 60rem;
   }
 }/*# sourceMappingURL=technologies.css.map */

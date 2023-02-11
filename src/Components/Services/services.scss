@@ -25,28 +25,25 @@
           font-size: 1.5rem;
       }
   }
-   .separator {
-       text-align: center;
-       margin-bottom: -21rem;
-       margin-top: 20rem;
-   }
-
-   .separator::before,
-   .separator::after {
-       content: " ";
-       display: inline-block;
-       border-top: 2px solid #333;
-       padding-bottom: 4px;
-       width: 15%;
-   }
-
-   .separator::before {
-       margin-right: 12px;
-   }
-
-   .separator::after {
-       margin-left: 12px;
-   }
+  .separator1 {
+      text-align: center;
+      margin-bottom: 10rem;
+      margin-top: -3rem;
+  }
+  .separator1::before,
+  .separator1::after {
+      content: " ";
+      display: inline-block;
+      border-top: 2px solid #333;
+      padding-bottom: 4px;
+      width: 15%;
+  }
+  .separator1::before {
+      margin-right: 12px;
+  }
+  .separator1::after {
+      margin-left: 12px;
+  }
   .services {
       display: flex;
       height: 30rem;
@@ -101,7 +98,11 @@
   }
   /* left side */
   /* right sided */
-  @media screen and (max-width: 540px) {
+  @media screen and (max-width: 600px) {
+      .separator1 {
+          margin-bottom: 9rem !important;
+          margin-top: -3rem !important;
+      }
       .program__headss {
           margin-top: -5rem;
           margin-left: 1rem;
@@ -134,6 +135,13 @@
       }
   }
   @media screen and (min-device-width: 767px) and (max-device-width: 1000px) {
+      .separator1 {
+          margin-bottom: 5rem !important;
+          margin-top: -6rem !important;
+      }
+      .program__headss {
+          margin-left: -1rem;
+      }
       .services {
           margin-top: 0;
           flex-direction: column;
@@ -143,6 +151,7 @@
           // width: 20rem;
           .awesome {
               padding-top: 10rem;
+              margin-left: -1rem;
           }
       }
       .cards {
@@ -192,6 +201,11 @@
       }
   }
   @media screen and (device-width: 1024px) {
+      .separator1 {
+          text-align: center;
+          margin-bottom: 10rem;
+          margin-top: 10rem;
+      }
       .program__headss {
           margin-left: -5rem;
       }
@@ -205,6 +219,10 @@
           }
       }
   }
-  @media screen and (min-device-width: 1490px) {
-
+  @media screen and (device-width: 1280px) {
+      .separator1 {
+          text-align: center;
+          margin-bottom: 10rem;
+          margin-top: 10rem;
+      }
   }

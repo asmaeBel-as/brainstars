@@ -27,14 +27,14 @@
   font-size: 1.5rem;
 }
 
-.separator {
+.separator1 {
   text-align: center;
-  margin-bottom: -21rem;
-  margin-top: 20rem;
+  margin-bottom: 10rem;
+  margin-top: -3rem;
 }
 
-.separator::before,
-.separator::after {
+.separator1::before,
+.separator1::after {
   content: " ";
   display: inline-block;
   border-top: 2px solid #333;
@@ -42,11 +42,11 @@
   width: 15%;
 }
 
-.separator::before {
+.separator1::before {
   margin-right: 12px;
 }
 
-.separator::after {
+.separator1::after {
   margin-left: 12px;
 }
 
@@ -105,7 +105,11 @@
 
 /* left side */
 /* right sided */
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 600px) {
+  .separator1 {
+    margin-bottom: 9rem !important;
+    margin-top: -3rem !important;
+  }
   .program__headss {
     margin-top: -5rem;
     margin-left: 1rem;
@@ -137,6 +141,13 @@
   }
 }
 @media screen and (min-device-width: 767px) and (max-device-width: 1000px) {
+  .separator1 {
+    margin-bottom: 5rem !important;
+    margin-top: -6rem !important;
+  }
+  .program__headss {
+    margin-left: -1rem;
+  }
   .services {
     margin-top: 0;
     flex-direction: column;
@@ -145,6 +156,7 @@
   }
   .services .awesome {
     padding-top: 10rem;
+    margin-left: -1rem;
   }
   .cards {
     margin-left: 4rem;
@@ -185,6 +197,11 @@
   }
 }
 @media screen and (device-width: 1024px) {
+  .separator1 {
+    text-align: center;
+    margin-bottom: 10rem;
+    margin-top: 10rem;
+  }
   .program__headss {
     margin-left: -5rem;
   }
@@ -194,5 +211,12 @@
   .services .cards {
     margin-left: -11rem !important;
     margin-top: -2rem;
+  }
+}
+@media screen and (device-width: 1280px) {
+  .separator1 {
+    text-align: center;
+    margin-bottom: 10rem;
+    margin-top: 10rem;
   }
 }/*# sourceMappingURL=services.css.map */

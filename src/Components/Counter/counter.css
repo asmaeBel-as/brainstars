@@ -51,8 +51,7 @@
   z-index: -4;
   margin-top: 60rem !important;
   margin-left: -30rem;
-  -webkit-animation: key 7s linear infinite;
-          animation: key 7s linear infinite;
+  animation: key 7s linear infinite;
 }
 .experience .background-image-top {
   top: 50%;
@@ -61,19 +60,7 @@
   margin-left: 45rem;
   width: 40%;
   z-index: -4;
-  -webkit-animation: key 4s linear infinite;
-          animation: key 4s linear infinite;
-}
-@-webkit-keyframes key {
-  0% {
-    transform: translateY(-20px);
-  }
-  50% {
-    transform: translateY(80px);
-  }
-  100% {
-    transform: translateY(-20px);
-  }
+  animation: key 4s linear infinite;
 }
 @keyframes key {
   0% {
@@ -103,10 +90,8 @@
   margin: 0 4px;
   border-radius: 50%;
   box-shadow: 0 0 0 10px rgba(79, 195, 220, 0.2666666667), 0 0 50px #4FC3DC, 0 0 100px #4FC3DC;
-  -webkit-animation: animate 15s linear infinite;
-          animation: animate 15s linear infinite;
-  -webkit-animation-duration: calc(10s / var(--i));
-          animation-duration: calc(10s / var(--i));
+  animation: animate 15s linear infinite;
+  animation-duration: calc(10s / var(--i));
   z-index: -999;
 }
 .experience .bubbleContainer .bubbles span:nth-child(even) {
@@ -170,14 +155,6 @@
 .experience .bubbleContainer .bubbles span:nth-child(19) {
   --i: 9;
 }
-@-webkit-keyframes animate {
-  0% {
-    transform: translateY(20vh) scale(0);
-  }
-  100% {
-    transform: translateY(-10vh) scale(1);
-  }
-}
 @keyframes animate {
   0% {
     transform: translateY(20vh) scale(0);
@@ -221,15 +198,6 @@
 }
 .experience .achievement span:nth-of-type(2) {
   color: #BC2C33;
-}
-
-@-webkit-keyframes work-blueCircle {
-  from {
-    transform: translateY(15rem);
-  }
-  to {
-    transform: translateX(90%);
-  }
 }
 
 @keyframes work-blueCircle {

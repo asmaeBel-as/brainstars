@@ -63,8 +63,7 @@
 }
 
 .banner img {
-  -webkit-animation: updown 3s linear infinite;
-          animation: updown 3s linear infinite;
+  animation: updown 3s linear infinite;
   margin-top: -5rem;
   user-select: none;
   -moz-user-select: none;
@@ -77,16 +76,14 @@
   width: 10%;
   position: absolute;
   top: 12rem !important;
-  -webkit-animation: kkey 7s linear infinite;
-          animation: kkey 7s linear infinite;
+  animation: kkey 7s linear infinite;
 }
 
 .banner .shooting {
   width: 10%;
   position: absolute;
   top: 12rem !important;
-  -webkit-animation: shooting 7s linear infinite;
-          animation: shooting 7s linear infinite;
+  animation: shooting 7s linear infinite;
 }
 
 .banner .shooting1 {
@@ -94,8 +91,7 @@
   position: absolute;
   top: 14rem !important;
   right: 20rem;
-  -webkit-animation: shooting 5s linear infinite;
-          animation: shooting 5s linear infinite;
+  animation: shooting 5s linear infinite;
 }
 
 .banner .shooting2 {
@@ -103,8 +99,7 @@
   position: absolute;
   right: 50rem;
   top: 13rem !important;
-  -webkit-animation: shooting 2s linear infinite;
-          animation: shooting 2s linear infinite;
+  animation: shooting 2s linear infinite;
 }
 
 .banner .shooting3 {
@@ -112,8 +107,7 @@
   position: absolute;
   top: 10rem;
   right: 3rem !important;
-  -webkit-animation: shooting 3s linear infinite;
-          animation: shooting 3s linear infinite;
+  animation: shooting 3s linear infinite;
 }
 
 .banner .shooting4 {
@@ -121,20 +115,7 @@
   position: absolute;
   right: 30rem;
   top: 11rem !important;
-  -webkit-animation: shooting 2s linear infinite;
-          animation: shooting 2s linear infinite;
-}
-
-@-webkit-keyframes updown {
-  0% {
-    transform: translateY(-20px);
-  }
-  50% {
-    transform: translateY(20px);
-  }
-  100% {
-    transform: translateY(-20px);
-  }
+  animation: shooting 2s linear infinite;
 }
 
 @keyframes updown {
@@ -148,31 +129,12 @@
     transform: translateY(-20px);
   }
 }
-@-webkit-keyframes kkey {
-  from {
-    transform: translateX(0px);
-  }
-  to {
-    transform: translateX(calc(100vw - 10vmin));
-  }
-}
 @keyframes kkey {
   from {
     transform: translateX(0px);
   }
   to {
     transform: translateX(calc(100vw - 10vmin));
-  }
-}
-@-webkit-keyframes shooting {
-  0% {
-    transform: translateY(20px);
-  }
-  50% {
-    transform: translateX(100px);
-  }
-  100% {
-    transform: translateY(10px);
   }
 }
 @keyframes shooting {
