@@ -9,6 +9,7 @@ import "./testimonial.css";
 import lady from "../../Assets/user1.jpg";
 import mike from "../../Assets/user2.jpg";
 import man from "../../Assets/user3.jpg";
+import man2 from "../../Assets/user4.jpg";
 import shape from "../../Assets/footer.png";
 import { FaQuoteRight } from "react-icons/fa";
 import { FaQuoteLeft } from "react-icons/fa";
@@ -175,7 +176,7 @@ export default function Testimonial(props) {
                     </ul>
                   </div>
                   <div className="client-info">
-                    <img src={lady} alt="no internet connection"></img>
+                    <img src={man} alt="no internet connection"></img>
                     <h5>Suzanne</h5>
                     <p></p>
                   </div>
@@ -186,10 +187,11 @@ export default function Testimonial(props) {
                   <div className="testi-comment">
                     <p>
                       <FaQuoteLeft className="quote" />
-                      Brain Star Technologies Solutions has done a great job
-                      taking our company’s idea and developing a website as per
-                      our niche specifications. The team is technically strong
-                      and creative. I will not hesitate to recommend them.
+                      Thanks Brain Star Technologies for great support on our
+                      project. They not only showed their commitment and hard
+                      work in our project, but also helped us take care of some
+                      points that got missed by us and did not belong to their
+                      scope.
                       <FaQuoteRight className="quote" />
                     </p>
                     <ul className="stars list-unstyled">
@@ -211,8 +213,8 @@ export default function Testimonial(props) {
                     </ul>
                   </div>
                   <div className="client-info">
-                    <img src={man} alt="no internet connection"></img>
-                    <h5>Faiza</h5>
+                    <img src={man2} alt="no internet connection"></img>
+                    <h5>Mike</h5>
                     <p></p>
                   </div>
                 </div>
