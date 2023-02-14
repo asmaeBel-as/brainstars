@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./counter.css";
-import {FaCrown} from "react-icons/fa";
-import {BiHappyBeaming} from "react-icons/bi";
+import { FaCrown } from "react-icons/fa";
+import { BiHappyBeaming } from "react-icons/bi";
 import { BiWorld } from "react-icons/bi";
 import { BsFileCode } from "react-icons/bs";
 import { FaConnectdevelop } from "react-icons/fa";
@@ -140,5 +140,5 @@ const counter = () => {
       </section>
     </>
   );
-}
+};
 export default counter;

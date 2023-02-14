@@ -24,10 +24,10 @@ const about = (props) => {
     if (location.hash) {
       let elem = document.getElementById(location.hash.slice(1));
       if (elem) {
-        elem.scrollIntoView({ behavior: "smooth" });
+        elem.scrollIntoView({});
       }
     } else {
-      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+      window.scrollTo({ top: 0, left: 0 });
     }
   }, [location]);
   let fadeInScreenHandler = (screen) => {

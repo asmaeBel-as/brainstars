@@ -6,9 +6,9 @@ import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animation";
 import "./testimonial.css";
-import lady from "../../Assets/humble.png";
-import mike from "../../Assets/humble.png";
-import man from "../../Assets/humble.png";
+import lady from "../../Assets/user1.jpg";
+import mike from "../../Assets/user2.jpg";
+import man from "../../Assets/user3.jpg";
 import shape from "../../Assets/footer.png";
 import { FaQuoteRight } from "react-icons/fa";
 import { FaQuoteLeft } from "react-icons/fa";
@@ -22,10 +22,10 @@ export default function Testimonial(props) {
     if (location.hash) {
       let elem = document.getElementById(location.hash.slice(1));
       if (elem) {
-        elem.scrollIntoView({ behavior: "smooth" });
+        elem.scrollIntoView({});
       }
     } else {
-      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+      window.scrollTo({ top: 0, left: 0 });
     }
   }, [location]);
   let fadeInScreenHandler = (screen) => {
@@ -148,10 +148,12 @@ export default function Testimonial(props) {
                   <div className="testi-comment">
                     <p>
                       <FaQuoteLeft className="quote" />
-                      Excellent work. He was available to get to the task
-                      immediately and kept in constant communication as he
-                      worked on the issue. Overall, he completes the task so it
-                      was a very good experience. Thanks.
+                      Brain Star Technologies is driven by a passion to create
+                      and deliver on new ideas and that is reflected in their
+                      work. It is a team that strives for excellence and is open
+                      to experimenting and creating new trends in the business.
+                      Our work relationship has been productive and we have
+                      collectively been able to achieve great results.
                       <FaQuoteRight className="quote" />
                     </p>
                     <ul className="stars list-unstyled">

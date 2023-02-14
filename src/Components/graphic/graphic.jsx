@@ -1,6 +1,6 @@
 import React from "react";
 import img from "../../Assets/graphicd.png";
-import Back from '../common/back'
+import Back from "../common/back";
 import Heading from "../common/Heading";
 import flutter from "../../Assets/adobe.png";
 import react from "../../Assets/sketch.png";
@@ -12,67 +12,69 @@ import gravit from "../../Assets/gravit.jpeg";
 import canva from "../../Assets/canva.png";
 import procreate from "../../Assets/procreate.jpeg";
 import affinity from "../../Assets/affinity.jpeg";
-import './graphic.css'
+import mobileapp from "../../Assets/graphicd.png";
+import shape from "../../Assets/footer.png";
+import "./graphic.css";
 import { ChevronBarRight } from "react-bootstrap-icons";
 import { Link } from "react-router-dom";
 
 const Graphic = () => {
-    const scrollToTop = () => {
-      window.scrollTo(0, 0);
-    };
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
 
-     const featured = [
-       {
-         cover: flutter,
-         name: "Photoshop",
-        //  total: "122 Property",
-       },
-       {
-         cover: html,
-         name: "After Effects",
-        //  total: "155 Property",
-       },
-       {
-         cover: css,
-         name: "Figma",
-        //  total: "300 Property",
-       },
-       {
-         cover: react,
-         name: "Sketch",
-        // total: "80 Property",
-       },
-       {
-         cover: php,
-         name: "In Design",
-        //  total: "80 Property",
-       },
-       {
-         cover: pixlr,
-         name: "Pixlr",
-        //  total: "80 Property",
-       },
-       {
-         cover: gravit,
-         name: "Gravit Designer",
-        //  total: "80 Property",
-       },
-       {
-         cover: canva,
-         name: "Canva",
-        //  total: "80 Property",
-       },
-       {
-         cover: affinity,
-         name: "Affinity Photo",
-        //  total: "80 Property",
-       },
-       {
-         cover: procreate,
-         name: "Procreate",
-        //  total: "80 Property",
-       },
-     ];
+  const featured = [
+    {
+      cover: flutter,
+      name: "Photoshop",
+      //  total: "122 Property",
+    },
+    {
+      cover: html,
+      name: "After Effects",
+      //  total: "155 Property",
+    },
+    {
+      cover: css,
+      name: "Figma",
+      //  total: "300 Property",
+    },
+    {
+      cover: react,
+      name: "Sketch",
+      // total: "80 Property",
+    },
+    {
+      cover: php,
+      name: "In Design",
+      //  total: "80 Property",
+    },
+    {
+      cover: pixlr,
+      name: "Pixlr",
+      //  total: "80 Property",
+    },
+    {
+      cover: gravit,
+      name: "Gravit Designer",
+      //  total: "80 Property",
+    },
+    {
+      cover: canva,
+      name: "Canva",
+      //  total: "80 Property",
+    },
+    {
+      cover: affinity,
+      name: "Affinity Photo",
+      //  total: "80 Property",
+    },
+    {
+      cover: procreate,
+      name: "Procreate",
+      //  total: "80 Property",
+    },
+  ];
   return (
     <>
       <section className="about">
@@ -122,17 +124,22 @@ const Graphic = () => {
           ))}
         </div>
       </div>
-      <div class="Bbanner">
-        <div class="banner-text">
-          <h1 className="h1">NEED AN AWESOME DESIGN?</h1>
-          <h3 className="h3">
-            We'RE HERE TO HELP<span class="call-to-action__dot">.</span>
-          </h3>
-          <h6 className="h6">
-            {" "}
+      <div className="ContainerGlass">
+        <div class="canvas">
+          <div class="circle"></div>
+          <div id="cardss" class="cardss">
+            <div className="text">
+              <h3>Need An Awesome Marketing?</h3>
+              <h5>We Provide :</h5>
+              <div className="mini__cards text">
+                <div className="miniCard text">QUALITY</div>
+                <div className="miniCard text">RELIABILITY</div>
+                <div className="miniCard text">EXPERTISE</div>
+              </div>
+            </div>
             <div class="mt-40">
               <Link to={"/contactus"} onClick={scrollToTop}>
-                <a href="" class="button btn-lg btn-color btn-icon">
+                <a href="" className="buttons btn-lg btn-color btn-icon">
                   <span>Get In Touch</span>
                   <i>
                     {" "}
@@ -141,8 +148,15 @@ const Graphic = () => {
                 </a>
               </Link>
             </div>
-          </h6>
+          </div>
+          <div className="imageGlassContainer">
+            <img src={mobileapp} alt="" />
+          </div>
+          <div class="circle"></div>
         </div>
+      </div>
+      <div className="footer-image">
+        <img src={shape} alt="Phot0 not responding" />
       </div>
     </>
   );

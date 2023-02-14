@@ -16,6 +16,7 @@
   justify-content: flex-end;
   align-items: flex-end;
   min-height: 80vh;
+  margin-top: -10rem;
 }
 .ffooter .main {
   position: relative;

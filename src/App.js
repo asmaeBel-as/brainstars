@@ -1,5 +1,5 @@
 import "./App.css";
-import React,{useState} from "react";
+import React, { useState } from "react";
 import Navbar from "./Components/Navbar/navbar";
 import Home from "./Components/Home/home";
 import AboutUs from "./Components/AboutUs/about";
@@ -10,18 +10,17 @@ import Blog from "./Components/Blog/blog";
 import ContactUs from "./Components/ContactUs/contactUs";
 import Technologies from "./Components/Technologies/technologies";
 import Testimonials from "./Components/Testimonial/testimonial";
-import Counter from './Components/Counter/counter';
-import Card from './Components/Card/Card';
-import AppDev from './Components/Appdev/Appdev';
+import Counter from "./Components/Counter/counter";
+import Card from "./Components/Card/Card";
+import AppDev from "./Components/Appdev/Appdev";
 import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 import Founders from "./Components/Founders/Founders";
-import Chat from './Components/chatbox/chatbox'
-import Mobile from './Components/mobile/mobile';
-import Web from './Components/web/web';
-import Graphic from './Components/graphic/graphic';
-import Digital from './Components/digital/digital';
+import Chat from "./Components/chatbox/chatbox";
+import Mobile from "./Components/mobile/mobile";
+import Web from "./Components/web/web";
+import Graphic from "./Components/graphic/graphic";
+import Digital from "./Components/digital/digital";
 import Companies from "./Components/Companies/companies";
-
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -29,8 +28,8 @@ function App() {
   if (gifContainer) {
     setTimeout(() => {
       gifContainer.style.display = "none";
-      setLoading(false)
-    },5000)
+      setLoading(false);
+    }, 5000);
   }
   return (
     !loading && (
@@ -45,17 +44,16 @@ function App() {
                   <Outlet />
                   <Home />
                   <AboutUs />
-                  
+
                   <Founders />
                   <Companies />
                   <Services />
                   <Counter />
                   <Card />
                   <Technologies />
-                 
+
                   <Testimonials />
                   <Footer />
-                 
                 </>
               }
             />

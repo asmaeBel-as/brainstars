@@ -7,11 +7,11 @@
     width: 92%;
     animation: updown 3s linear infinite;
     user-drag: none;
-        user-select: none;
-        -moz-user-select: none;
-        -webkit-user-drag: none;
-        -webkit-user-select: none;
-        -ms-user-select: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 @keyframes updown {
@@ -36,7 +36,8 @@
 }
 
 .contact form input,
-.contact form textarea , .contact form select{
+.contact form textarea,
+.contact form select {
     width: 100%;
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.5);
@@ -52,8 +53,7 @@
 
 .contact form input:focus,
 .contact form textarea:focus,
-.contact form select:focus
- {
+.contact form select:focus {
     background: rgba(255, 255, 255, 1);
     color: #121212;
 }

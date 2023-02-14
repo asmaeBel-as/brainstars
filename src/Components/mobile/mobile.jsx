@@ -1,6 +1,6 @@
 import React from "react";
-import img from '../../Assets/mobile.svg';
-import Back from '../common/back'
+import img from "../../Assets/mobile.svg";
+import Back from "../common/back";
 import Heading from "../common/Heading";
 import flutter from "../../Assets/images.jpeg";
 import react from "../../Assets/images (1).jpeg";
@@ -12,67 +12,67 @@ import ruby from "../../Assets/ruby.jpeg";
 import csharp from "../../Assets/csharp.png";
 import cpp from "../../Assets/cpp.png";
 import rust from "../../Assets/rust.jpeg";
-import './mobile.css'
+import mobileapp from "../../Assets/mobileapp.jpg";
+import shape from "../../Assets/footer.png";
+import "./mobile.css";
 import { Link } from "react-router-dom";
 import { ChevronBarRight } from "react-bootstrap-icons";
-
 const Mobile = () => {
-   const scrollToTop = () => {
-     window.scrollTo(0, 0);
-   };
-
-     const featured = [
-       {
-         cover: flutter,
-         name: "Flutter Frameworks",
-         total: "50+ Developed",
-       },
-       {
-         cover: java,
-         name: "Java Frameworks",
-         total: "25+ Delivered",
-       },
-       {
-         cover: swift,
-         name: "Swift Frameworks",
-         total: "30+ IOS",
-       },
-       {
-         cover: react,
-         name: "React Native",
-         total: "20+ App ",
-       },
-       {
-         cover: kotlin,
-         name: "Kotlin Frameworks",
-         total: "10+ Apps",
-       },
-       {
-         cover: javascript,
-         name: "JavaScript",
-         total: "30+ Apps",
-       },
-       {
-         cover: ruby,
-         name: "Ruby",
-         total: "10+ Apps",
-       },
-       {
-         cover: cpp,
-         name: "C++",
-         total: "26+ Apps",
-       },
-       {
-         cover: csharp,
-         name: "Csharp",
-         total: "20+ Apps",
-       },
-       {
-         cover: rust,
-         name: "Rust Frameworks",
-         total: "15+ Apps",
-       },
-     ];
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+  const featured = [
+    {
+      cover: flutter,
+      name: "Flutter Frameworks",
+      total: "50+ Developed",
+    },
+    {
+      cover: java,
+      name: "Java Frameworks",
+      total: "25+ Delivered",
+    },
+    {
+      cover: swift,
+      name: "Swift Frameworks",
+      total: "30+ IOS",
+    },
+    {
+      cover: react,
+      name: "React Native",
+      total: "20+ App ",
+    },
+    {
+      cover: kotlin,
+      name: "Kotlin Frameworks",
+      total: "10+ Apps",
+    },
+    {
+      cover: javascript,
+      name: "JavaScript",
+      total: "30+ Apps",
+    },
+    {
+      cover: ruby,
+      name: "Ruby",
+      total: "10+ Apps",
+    },
+    {
+      cover: cpp,
+      name: "C++",
+      total: "26+ Apps",
+    },
+    {
+      cover: csharp,
+      name: "Csharp",
+      total: "20+ Apps",
+    },
+    {
+      cover: rust,
+      name: "Rust Frameworks",
+      total: "15+ Apps",
+    },
+  ];
   return (
     <>
       <section className="about">
@@ -83,7 +83,6 @@ const Mobile = () => {
               title="APP DEVELOPMENT"
               subtitle="Why App Development Important ?"
             />
-
             <p>
               One of the most significant advantages of mobile apps for
               businesses is this. It aids in the establishment of a direct
@@ -110,7 +109,6 @@ const Mobile = () => {
           </div>
         </div>
       </section>
-
       <div className="featured container">
         <div className="content grid5 mtop">
           {featured.map((items, index) => (
@@ -122,17 +120,22 @@ const Mobile = () => {
           ))}
         </div>
       </div>
-      <div class="Bbanner">
-        <div class="banner-text">
-          <h1 className="h1">NEED AN AWESOME MOBILE APP?</h1>
-          <h3 className="h3">
-            We'RE HERE TO HELP<span class="call-to-action__dot">.</span>
-          </h3>
-          <h6 className="h6">
-            {" "}
+      <div className="ContainerGlass">
+        <div class="canvas">
+          <div class="circle"></div>
+          <div id="cardss" className="cardss">
+            <div className="text">
+              <h3>Need An Awesome Application?</h3>
+              <h5>We Provide :</h5>
+              <div className="mini__cards text">
+                <div className="miniCard text">QUALITY</div>
+                <div className="miniCard text">RELIABILITY</div>
+                <div className="miniCard text">EXPERTISE</div>
+              </div>
+            </div>
             <div class="mt-40">
               <Link to={"/contactus"} onClick={scrollToTop}>
-                <a href="" class="button btn-lg btn-color btn-icon">
+                <a href="" className="buttons btn-lg btn-color btn-icon">
                   <span>Get In Touch</span>
                   <i>
                     {" "}
@@ -141,10 +144,24 @@ const Mobile = () => {
                 </a>
               </Link>
             </div>
-          </h6>
+          </div>
+          <div className="imageGlassContainer">
+            <img src={mobileapp} alt="" />
+          </div>
+          <div class="circle"></div>
         </div>
+        <a
+          target="_blank"
+          title="instagram/web__addict"
+          href="https://www.instagram.com/web__addict/"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+      <div className="footer-image">
+        <img src={shape} alt="Phot0 not responding" />
       </div>
     </>
   );
 };
-export default Mobile;  
+export default Mobile;

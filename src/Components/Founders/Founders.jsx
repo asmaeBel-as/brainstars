@@ -12,8 +12,6 @@ import { RiTeamLine } from "react-icons/ri";
 import { ChevronBarRight } from "react-bootstrap-icons";
 import { FaConnectdevelop } from "react-icons/fa";
 
-
-
 function MyVerticallyCenteredModal(props) {
   return (
     <Modal
@@ -98,7 +96,7 @@ function MyVerticallyCenteredModal(props) {
                       />
                     </svg> */}
                     <h1>Message from our CEO</h1>
-                    <p className="p">  
+                    <p className="p">
                       "People have believed that the CEO's responsibility was to
                       advise you whenever you didn't have enough budget or to
                       solely report economic performance after the fact. CEOs
@@ -113,7 +111,6 @@ function MyVerticallyCenteredModal(props) {
                       Brainstar Technologies one of the finest financially
                       stable organizations around the globe. "
                     </p>
-                    
                   </div>
                 </div>
               </div>

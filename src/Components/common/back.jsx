@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const Back = ({ name, title, cover }) => {
   return (
     <>

@@ -205,7 +205,14 @@ const companies = () => {
                       target="_blank"
                       title="https://lcwatches.com"
                     >
-                      <img src={img4} alt="" />
+                      <img
+                        src={img4}
+                        alt=""
+                        style={{
+                          width: "30%",
+                          height: "60%",
+                        }}
+                      />
                     </a>
                   </div>
                   <div className="carousel-item">
@@ -243,7 +250,7 @@ const companies = () => {
                       target="_blank"
                       title="https://www.beekeepersnaturals.com/"
                     >
-                      <img src={img8} alt="" style={{ width: "50%" }} />
+                      <img src={img8} alt="" style={{ width: "30%" }} />
                     </a>
                   </div>
                   {/* *************************************************** */}
@@ -290,7 +297,13 @@ const companies = () => {
                       target="_blank"
                       title="https://www.angelacaglia.com"
                     >
-                      <img src={img12} alt="" />
+                      <img
+                        src={img12}
+                        alt=""
+                        style={{
+                          width: "150%",
+                        }}
+                      />
                     </a>
                   </div>
                   {/* *************************************************** */}
@@ -325,7 +338,7 @@ const companies = () => {
                         src={img19}
                         alt=""
                         style={{
-                          width: "30%",
+                          width: "50%",
                         }}
                       />
                     </a>
@@ -367,7 +380,7 @@ const companies = () => {
                       target="_blank"
                       title="http://www.ostaszstudio.com"
                     >
-                      <img src={img23} alt="" />
+                      <img src={img23} alt="" style={{ width: "150%" }} />
                     </a>
                   </div>
                   {/* *************************************************** */}

@@ -13,6 +13,8 @@ import internet from "../../Assets/internet.jpeg";
 import html from "../../Assets/scm.jpg";
 import unsplash from "../../Assets/unsplash.jpg";
 import css from "../../Assets/viral.png";
+import mobileapp from "../../Assets/marketing2.png";
+import shape from "../../Assets/footer.png";
 import "./digital.css";
 import { ChevronBarRight } from "react-bootstrap-icons";
 import { Link } from "react-router-dom";
@@ -115,17 +117,22 @@ const Digital = () => {
           ))}
         </div>
       </div>
-      <div class="Bbanner">
-        <div class="banner-text">
-          <h1 className="h1">NEED AN AWESOME BRANDING?</h1>
-          <h3 className="h3">
-            We'RE HERE TO HELP<span class="call-to-action__dot">.</span>
-          </h3>
-          <h6 className="h6">
-            {" "}
+      <div className="ContainerGlass">
+        <div class="canvas">
+          <div class="circle"></div>
+          <div id="cardss" class="cardss">
+            <div className="text">
+              <h3>Need An Awesome Marketing?</h3>
+              <h5>We Provide :</h5>
+              <div className="mini__cards text">
+                <div className="miniCard text">QUALITY</div>
+                <div className="miniCard text">RELIABILITY</div>
+                <div className="miniCard text">EXPERTISE</div>
+              </div>
+            </div>
             <div class="mt-40">
               <Link to={"/contactus"} onClick={scrollToTop}>
-                <a href="" class="button btn-lg btn-color btn-icon">
+                <a href="" className="buttons btn-lg btn-color btn-icon">
                   <span>Get In Touch</span>
                   <i>
                     {" "}
@@ -134,8 +141,16 @@ const Digital = () => {
                 </a>
               </Link>
             </div>
-          </h6>
+          </div>
+          <div className="imageGlassContainer">
+            <img src={mobileapp} alt="" />
+          </div>
+          <div class="circle"></div>
         </div>
+       
+      </div>
+      <div className="footer-image">
+        <img src={shape} alt="Phot0 not responding" />
       </div>
     </>
   );
