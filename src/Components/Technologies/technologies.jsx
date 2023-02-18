@@ -38,7 +38,7 @@ const technologies = (props) => {
        });
      }
    } else {
-     window.scrollTo({ left: 0, top: elem.offsetTop });
+     window.scrollTo({ left: 0, top: 0 });
    }
  }, [location]);
   
