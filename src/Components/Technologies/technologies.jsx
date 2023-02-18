@@ -96,13 +96,13 @@ const technologies = (props) => {
     },
   };
   return (
-    <section className="skill" id="skills">
+    <section className="skill">
       <img className="background-image-top" src={purpleblur} alt="" />
       <Container>
         <Row>
           <Col size={18}>
             <div className="skill-bx wow zoomIn">
-              <h2>Techologies</h2>
+              <h2 id="skills">Techologies</h2>
               <p>
                 We offer Services with various Technologies<br></br> Lorem Ipsum
                 has been the industry's standard dummy text.

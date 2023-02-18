@@ -182,7 +182,7 @@
       .navBar {
           background: var(--black);
           position: absolute;
-          height: 130vh;
+          height: 150vh !important;
           width: 100%;
 
           padding: .2rem;
@@ -191,7 +191,7 @@
           z-index: 2000;
           box-shadow: 0 2px 4px rgba(209, 209, 209, 0.904);
           transition: .5s ease-in-out;
-          clip-path: circle(115vh at 50% -50vh);
+          clip-path: circle(140vh at 50% -50vh) !important;
 
           .navLists {
               display: flex;
