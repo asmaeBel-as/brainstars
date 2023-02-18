@@ -15,7 +15,7 @@
       // padding: 0 0 0 0;
       position: relative;
       width: 95rem;
-      // margin-left: ;
+    //    margin-left: 0 !important;
   }
 
   .skill-bx {
@@ -101,7 +101,7 @@
   }
 
   .skill-slider {
-      margin: 0 auto;
+    //   margin: 0 auto;
       position: relative;
   }
 
@@ -153,7 +153,7 @@
   @media screen and (max-width: 540px) {
       .skill {
           width: 55%;
-          margin-left: 12rem;
+         margin-left: 11rem;
       }
 
       .arrowContainer {

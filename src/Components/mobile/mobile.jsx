@@ -17,7 +17,13 @@ import shape from "../../Assets/footer.png";
 import "./mobile.css";
 import { Link } from "react-router-dom";
 import { ChevronBarRight } from "react-bootstrap-icons";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 const Mobile = () => {
+   useEffect(() => {
+     Aos.init({ duration: 2000 });
+   }, []);
   const scrollToTop = () => {
     window.scrollTo(0, 0);
   };
@@ -82,8 +88,10 @@ const Mobile = () => {
             <Heading
               title="APP DEVELOPMENT"
               subtitle="Why App Development Important ?"
+              data-aos="fade-up"
+              data-aos-duration="2100"
             />
-            <p>
+            <p data-aos="fade-up" data-aos-duration="2100">
               One of the most significant advantages of mobile apps for
               businesses is this. It aids in the establishment of a direct
               marketing channel between firms and their customers, allowing for
@@ -92,7 +100,7 @@ const Mobile = () => {
               you may install and send push and in-app alerts to as many clients
               as you want with your mobile app.
             </p>
-            <p>
+            <p data-aos="fade-up" data-aos-duration="2100">
               Many of the world's biggest corporations, SMEs, and technological
               competitors choose Brainstartechnology as their partner of choice.
               Through custom software development, product design, QA, and
@@ -109,7 +117,11 @@ const Mobile = () => {
           </div>
         </div>
       </section>
-      <div className="featured container">
+      <div
+        className="featured container"
+        data-aos="fade-up"
+        data-aos-duration="2100"
+      >
         <div className="content grid5 mtop">
           {featured.map((items, index) => (
             <div className="box" key={index}>
@@ -120,7 +132,11 @@ const Mobile = () => {
           ))}
         </div>
       </div>
-      <div className="ContainerGlass">
+      <div
+        className="ContainerGlass"
+        data-aos="fade-up"
+        data-aos-duration="2100"
+      >
         <div class="canvas">
           <div class="circle"></div>
           <div id="cardss" className="cardss">
@@ -128,9 +144,27 @@ const Mobile = () => {
               <h3>Need An Awesome Application?</h3>
               <h5>We Provide :</h5>
               <div className="mini__cards text">
-                <div className="miniCard text">QUALITY</div>
-                <div className="miniCard text">RELIABILITY</div>
-                <div className="miniCard text">EXPERTISE</div>
+                <div
+                  className="miniCard text"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
+                  QUALITY
+                </div>
+                <div
+                  className="miniCard text"
+                  data-aos="fade-up"
+                  data-aos-duration="1100"
+                >
+                  RELIABILITY
+                </div>
+                <div
+                  className="miniCard text"
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                >
+                  EXPERTISE
+                </div>
               </div>
             </div>
             <div class="mt-40">

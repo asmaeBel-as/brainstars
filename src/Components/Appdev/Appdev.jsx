@@ -19,209 +19,175 @@ import Modal from "react-bootstrap/Modal";
 
 function MyVerticallyCenteredModal(props) {
   return (
-    <Modal
-      {...props}
-      size="lg"
-      aria-labelledby="contained-modal-title-vcenter"
-      centered
-    >
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-          Mobile Development
-        </Modal.Title>
-      </Modal.Header>
-      <Modal.Body>
-        <h4>Why App Development Important ?</h4>
-        <p>
-          <br />
-          One of the most significant advantages of mobile apps for businesses
-          is this. It aids in the establishment of a direct marketing channel
-          between firms and their customers, allowing for immediate and
-          effective connection. Here is your solution for searching for the best
-          app development company in USA. and then you may install and send push
-          and in-app alerts to as many clients as you want with your mobile app.
-        </p>
+    <Modal {...props} aria-labelledby="contained-modal-title-vcenter" centered>
+      <Modal.Body class="snip1195">
+        <h4>Mobile App</h4>
+        <div class="image">
+          <img
+            src="https://img.freepik.com/free-vector/mobile-phone-surrounded-by-colorful-app-icons_52683-23825.jpg?w=2000"
+            alt="sq-sample14"
+          />
+        </div>
+        <figcaption>
+          <p>
+            One of the most significant advantages of mobile apps for businesses
+            is this. It aids in the establishment of a direct marketing channel
+            between firms and their customers, allowing for immediate and
+            effective connection. Here is your solution for searching for the
+            best app development company in USA. and then you may install and
+            send push and in-app alerts to as many clients as you want with your
+            mobile app.
+          </p>
+        </figcaption>{" "}
+        <button class="add-to-cart" onClick={props.onHide}>
+          close
+        </button>
       </Modal.Body>
-      <Modal.Footer>
-        <Button onClick={props.onHide} className="close-btn">
-          Close
-        </Button>
-      </Modal.Footer>
     </Modal>
   );
 }
 function WebDev(props) {
   return (
-    <Modal
-      {...props}
-      size="lg"
-      aria-labelledby="contained-modal-title-vcenter"
-      centered
-    >
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-          Web Development
-        </Modal.Title>
-      </Modal.Header>
-      <Modal.Body>
-        <h4>Why Web Development Important ?</h4>
-        <p>
-          <br />
-          The task of generating a positive first impression on a client falls
-          on a website. As a result, your website should digitally represent the
-          best aspects of your company. Brainstar Technologies is one of the
-          greatest web development company in USA, specializing in virtual
-          branding and high-tech website building. We create a website that is
-          adaptable to any design. Including everything from mobile web
-          development and responsive website design to custom e-commerce and
-          intranet experiences using the most up-to-date and proven web
-          technologies is one of the best web development in USA.
-        </p>
+    <Modal {...props} aria-labelledby="contained-modal-title-vcenter" centered>
+      <Modal.Body class="snip1195">
+        <h4>Web Dev</h4>
+        <div class="image">
+          <img
+            src="https://img.freepik.com/free-vector/desktop-smartphone-app-development_23-2148683810.jpg?w=2000" alt="sq-sample14"
+          />
+        </div>
+        <figcaption>
+          <p>
+            The task of generating a positive first impression on a client falls
+            on a website. As a result, your website should digitally represent
+            the best aspects of your company. Brainstar Technologies is one of
+            the greatest web development company in USA, specializing in virtual
+            branding and high-tech website building. We create a website that is
+            adaptable to any design. Including everything from mobile web
+            development and responsive website design to custom e-commerce and
+            intranet experiences using the most up-to-date and proven web
+            technologies is one of the best web development in USA.
+          </p>
+        </figcaption>{" "}
+        <button class="add-to-cart" onClick={props.onHide}>
+          close
+        </button>
       </Modal.Body>
-      <Modal.Footer>
-        <Button onClick={props.onHide} className="close-btn">
-          Close
-        </Button>
-      </Modal.Footer>
     </Modal>
   );
 }
 function UxUi(props) {
   return (
-    <Modal
-      {...props}
-      size="lg"
-      aria-labelledby="contained-modal-title-vcenter"
-      centered
-    >
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-          Web Development
-        </Modal.Title>
-      </Modal.Header>
-      <Modal.Body>
-        <h4>Why UI/UX Design Important ?</h4>
-        <p>
-          <br />
-          UI/UX company works on aspects such as icons, style, colors, size, and
-          visual components with the greatest team of web designers to give your
-          business website a distinct appearance and feel. Your business website
-          design will have a consistent and wonderful user experience thanks to
-          the Brain star technologies UI UX design services.
-        </p>
+    <Modal {...props} aria-labelledby="contained-modal-title-vcenter" centered>
+      <Modal.Body class="snip1195">
+        <h4>UI/UX Design</h4>
+        <div class="image">
+          <img
+            src="https://unit52.pk/wp-content/uploads/2021/08/UI-Design-Img.png"
+            alt="sq-sample14"
+          />
+        </div>
+        <figcaption>
+          <p>
+            UI/UX company works on aspects such as icons, style, colors, size,
+            and visual components with the greatest team of web designers to
+            give your business website a distinct appearance and feel. Your
+            business website design will have a consistent and wonderful user
+            experience thanks to the Brain star technologies UI UX design
+            services.
+          </p>
+        </figcaption>{" "}
+        <button class="add-to-cart" onClick={props.onHide}>
+          close
+        </button>
       </Modal.Body>
-      <Modal.Footer>
-        <Button onClick={props.onHide} className="close-btn">
-          Close
-        </Button>
-      </Modal.Footer>
     </Modal>
   );
 }
 function Graphic(props) {
   return (
-    <Modal
-      {...props}
-      size="lg"
-      aria-labelledby="contained-modal-title-vcenter"
-      centered
-    >
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-          Graphic Design
-        </Modal.Title>
-      </Modal.Header>
-      <Modal.Body>
-        <h4>Why Graphic Design Important ?</h4>
-        <p>
-          <br />
-          Graphic design has several advantages for organizations when applied
-          well. It may help increase your marketing and advertising effort by
-          providing excellent visual communication. It can assist in informing,
-          educating, or persuading your target audience, as well as converting
-          them into customers. It may help to promote your brand, so select the
-          best graphic design services in USA wisely.
-        </p>
+    <Modal {...props} aria-labelledby="contained-modal-title-vcenter" centered>
+      <Modal.Body class="snip1195">
+        <h4>Graphic Design</h4>
+        <div class="image">
+          <img
+            src="https://www.promoteabhi.com/public/frontend/images/graphic-designing/providing-creative.webp"
+            alt="sq-sample14"
+          />
+        </div>
+        <figcaption>
+          <p>
+            Graphic design has several advantages for organizations when applied
+            well. It may help increase your marketing and advertising effort by
+            providing excellent visual communication. It can assist in
+            informing, educating, or persuading your target audience, as well as
+            converting them into customers. It may help to promote your brand,
+            so select the best graphic design services in USA wisely.
+          </p>
+        </figcaption>{" "}
+        <button class="add-to-cart" onClick={props.onHide}>
+          close
+        </button>
       </Modal.Body>
-      <Modal.Footer>
-        <Button onClick={props.onHide} className="close-btn">
-          Close
-        </Button>
-      </Modal.Footer>
     </Modal>
   );
 }
 function Seo(props) {
   return (
-    <Modal
-      {...props}
-      size="lg"
-      aria-labelledby="contained-modal-title-vcenter"
-      centered
-    >
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-          Search Engine OPtimization
-        </Modal.Title>
-      </Modal.Header>
-      <Modal.Body>
-        <h4>What We Provide? ?</h4>
-        <p>
-          <br />
-          SEO is the technique of using search engine results to increase the
-          number and quality of traffic to a website. Your website must appear
-          on the first page of the search engine results when it is searched.
-          Few people have the strength to continue on to the next page. Our
-          cutting-edge SEO strategy ensures that you obtain a significant
-          increase in traffic, allowing you to meet all of your company goals.
-          Brain star technologies are one of the finest and best SEO services
-          company in USA, who gives best SEO service results in all over the
-          world.
-        </p>
+    <Modal {...props} aria-labelledby="contained-modal-title-vcenter" centered>
+      <Modal.Body class="snip1195">
+        <h4>SEO</h4>
+        <div class="image">
+          <img
+            src="https://ocdigitalnetwork.com/wp-content/uploads/2018/04/h3-image-2.png"
+            alt="sq-sample14"
+          />
+        </div>
+        <figcaption>
+          <p>
+            SEO is the technique of using search engine results to increase the
+            number and quality of traffic to a website. Your website must appear
+            on the first page of the search engine results when it is searched.
+            Few people have the strength to continue on to the next page. Our
+            cutting-edge SEO strategy ensures that you obtain a significant
+            increase in traffic, allowing you to meet all of your company goals.
+            Brain star technologies are one of the finest and best SEO services
+            company in USA, who gives best SEO service results in all over the
+            world.
+          </p>
+        </figcaption>{" "}
+        <button class="add-to-cart" onClick={props.onHide}>
+          close
+        </button>
       </Modal.Body>
-      <Modal.Footer>
-        <Button onClick={props.onHide} className="close-btn">
-          Close
-        </Button>
-      </Modal.Footer>
     </Modal>
   );
 }
 function Digital(props) {
   return (
-    <Modal
-      {...props}
-      size="lg"
-      aria-labelledby="contained-modal-title-vcenter"
-      centered
-    >
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-          Digital Marketing
-        </Modal.Title>
-      </Modal.Header>
-      <Modal.Body>
-        <h4>What We Provide ?</h4>
-        <p>
-          <br />
-          Brain star technologies provide a wide range of digital marketing
-          services (DMS), including SEO, SMM, and SEM, to help businesses become
-          more productive. Brain star Technologies, one of the leading digital
-          marketing agency in USA, can help your company grow in a way that is
-          suited for it by providing solutions to improve its online presence.
-          So, if you’re a new business looking for exceptional digital marketing
-          services USA, we’re your best bet. We assist your company in
-          converting into the digital world in the USA by refining your grasp of
-          broad industry trends to specific principles that will form the
-          cornerstone of your company’s goals. Digitally, our cornerstone
-          approach benefits your company and customers.
-        </p>
+    <Modal {...props} aria-labelledby="contained-modal-title-vcenter" centered>
+      <Modal.Body class="snip1195">
+        <h4>Digital Marketing</h4>
+        <div class="image">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSVbhm_Gmx293aUqOft3gh5v7DNECUfDJLL4UvA1z4Xfa-CaesBV7kmfzXYZ-GOpX9XB0&usqp=CAU"
+            alt="sq-sample14"
+          />
+        </div>
+        <figcaption>
+          <p>
+            Brain star technologies provide a wide range of digital marketing
+            services (DMS), including SEO, SMM, and SEM, to help businesses
+            become more productive. Brain star Technologies, one of the leading
+            digital marketing agency in USA, can help your company grow in a way
+            that is suited for it by providing solutions to improve its online
+            presence.
+          </p>
+        </figcaption>{" "}
+        <button class="add-to-cart" onClick={props.onHide}>
+          close
+        </button>
       </Modal.Body>
-      <Modal.Footer>
-        <Button onClick={props.onHide} className="close-btn">
-          Close
-        </Button>
-      </Modal.Footer>
     </Modal>
   );
 }

@@ -9,6 +9,9 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { TbGridDots } from "react-icons/tb";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import DropdownButton from "react-bootstrap/DropdownButton";
+import SplitButton from "react-bootstrap/SplitButton";
 import {
   Facebook,
   Instagram,
@@ -16,7 +19,13 @@ import {
   Twitter,
   Whatsapp,
 } from "react-bootstrap-icons";
+import { ButtonGroup, Dropdown } from "react-bootstrap";
 const Navbar = () => {
+  
+  function buttonColor(props) {
+   document.getElementById("item").style.backgroundColor = "#242D49";
+  }
+  
   const [active, setActive] = useState("navBar");
   const showNav = () => {
     setActive("navBar activeNavbar");
@@ -114,13 +123,54 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li className="navItem">
-              <NavLink
+              {/* <NavLink
                 to={{ pathname: "/", hash: "#testimonials" }}
                 exact
                 className="navLink"
               >
                 Testimonials
-              </NavLink>
+              </NavLink> */}
+
+              <div className="mb-2">
+                <NavDropdown
+                  // as={ButtonGroup}
+                  // key="down"
+                  // id={`nav-dropdown-dark-example`}
+                  // drop="down"
+                  // variant="secondary"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                  }}
+                  title={`Testimonials `}
+                  className="navLink"
+                  id="navDropDown"
+                  style={{ marginTop: ".5rem" }}
+                >
+                  <Dropdown.Item eventKey="1" className="dropdownItem ">
+                    <NavLink
+                      to={{ pathname: "/", hash: "#testimonials" }}
+                      exact
+                      className="item"
+                    >
+                      Text Testomonials
+                    </NavLink>
+                  </Dropdown.Item>
+                  <Dropdown.Item
+                   
+                    eventKey="2"
+                    className="dropdownItem"
+                  >
+                    {" "}
+                    <NavLink
+                      to={{ pathname: "/", hash: "#videotestimonial" }}
+                      exact
+                      className="item"
+                    >
+                      Video Testimonial
+                    </NavLink>
+                  </Dropdown.Item>
+                </NavDropdown>
+              </div>
             </li>
             <li className="navItem">
               <NavLink to="/contactus" exact className="navLink">

@@ -23,18 +23,32 @@ import { Col, Container, Row } from "react-bootstrap";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
-const technologies = () => {
-  let location = useLocation();
-  useEffect(() => {
-    if (location.hash) {
-      let elem = document.getElementById(location.hash.slice(1));
-      if (elem) {
-        elem.scrollIntoView({});
-      }
-    } else {
-      window.scrollTo({ top: 0, left: 0 });
-    }
-  }, [location]);
+import ScrollService from "../../utilities/ScrollService";
+import Animations from "../../utilities/Animation";
+const technologies = (props) => {
+ let location = useLocation();
+ useEffect(() => {
+   if (location.hash) {
+     var elem = document.getElementById(location.hash.slice(1));
+     if (elem) {
+       elem.scrollIntoView({
+         behavior: "smooth",
+         block: "start",
+         inline: "nearest",
+       });
+     }
+   } else {
+     window.scrollTo({ left: 0, top: elem.offsetTop });
+   }
+ }, [location]);
+  
+    let fadeInScreenHandler = (screen) => {
+      if (screen.fadeInScreen !== props.id) return;
+      Animations.animations.fadeInScreen(props.id);
+    };
+    const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(
+      fadeInScreenHandler
+    );
   const CustomRightArrow = ({ onClick, ...rest }) => {
     const {
       onMove,

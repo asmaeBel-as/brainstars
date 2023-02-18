@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import img from "../../Assets/graphicd.png";
 import Back from "../common/back";
 import Heading from "../common/Heading";
@@ -17,8 +17,13 @@ import shape from "../../Assets/footer.png";
 import "./graphic.css";
 import { ChevronBarRight } from "react-bootstrap-icons";
 import { Link } from "react-router-dom";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Graphic = () => {
+    useEffect(() => {
+      Aos.init({ duration: 2000 });
+    }, []);
   const scrollToTop = () => {
     window.scrollTo(0, 0);
   };
@@ -84,9 +89,11 @@ const Graphic = () => {
             <Heading
               title="Graphic Design "
               subtitle="Why Graphic Design Important ?"
+              data-aos="fade-up"
+              data-aos-duration="2100"
             />
 
-            <p>
+            <p data-aos="fade-up" data-aos-duration="2100">
               Graphic design has several advantages for organizations when
               applied well. It may help increase your marketing and advertising
               effort by providing excellent visual communication. It can assist
@@ -95,7 +102,7 @@ const Graphic = () => {
               your brand, so select the best graphic design services in USA
               wisely.
             </p>
-            <p>
+            <p data-aos="fade-up" data-aos-duration="2100">
               Many of the world's biggest corporations, SMEs, and technological
               competitors choose Brainstartechnology as their partner of choice.
               Through custom software development, product design, QA, and
@@ -113,7 +120,11 @@ const Graphic = () => {
         </div>
       </section>
 
-      <div className="featured container">
+      <div
+        className="featured container"
+        data-aos="fade-up"
+        data-aos-duration="2100"
+      >
         <div className="content grid5 mtop">
           {featured.map((items, index) => (
             <div className="box" key={index}>
@@ -124,7 +135,11 @@ const Graphic = () => {
           ))}
         </div>
       </div>
-      <div className="ContainerGlass">
+      <div
+        className="ContainerGlass"
+        data-aos="fade-up"
+        data-aos-duration="2100"
+      >
         <div class="canvas">
           <div class="circle"></div>
           <div id="cardss" class="cardss">
@@ -132,9 +147,27 @@ const Graphic = () => {
               <h3>Need An Awesome Marketing?</h3>
               <h5>We Provide :</h5>
               <div className="mini__cards text">
-                <div className="miniCard text">QUALITY</div>
-                <div className="miniCard text">RELIABILITY</div>
-                <div className="miniCard text">EXPERTISE</div>
+                <div
+                  className="miniCard text"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
+                  QUALITY
+                </div>
+                <div
+                  className="miniCard text"
+                  data-aos="fade-up"
+                  data-aos-duration="1100"
+                >
+                  RELIABILITY
+                </div>
+                <div
+                  className="miniCard text"
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                >
+                  EXPERTISE
+                </div>
               </div>
             </div>
             <div class="mt-40">

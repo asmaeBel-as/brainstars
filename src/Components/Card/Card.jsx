@@ -6,7 +6,7 @@ import video1 from "../../Assets/videoplayback.mp4";
 
 const Card = () => {
   return (
-    <section className="card">
+    <section className="card" id='videotestimonial'> 
       <div className="secContainer container">
         <div className="videoCard container">
           <div className=" cardContent grid">

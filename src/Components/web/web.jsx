@@ -17,8 +17,14 @@ import shape from "../../Assets/footer.png";
 import './web.css'
 import { Link } from "react-router-dom";
 import { ChevronBarRight } from "react-bootstrap-icons";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Mobile = () => {
+     useEffect(() => {
+       Aos.init({ duration: 2000 });
+     }, []);
     const scrollToTop = () => {
       window.scrollTo(0, 0);
     };
@@ -80,9 +86,14 @@ const Mobile = () => {
         <Back name="WEB DEVELOPMENT" title="What We Give?" cover={img} />
         <div className="container flex mtop">
           <div className="left row">
-            <Heading title="WEB DEVELOPMENT" subtitle="What We Provide?" />
+            <Heading
+              title="WEB DEVELOPMENT"
+              subtitle="What We Provide?"
+              data-aos="fade-up"
+              data-aos-duration="2100"
+            />
 
-            <p>
+            <p data-aos="fade-up" data-aos-duration="2100">
               The task of generating a positive first impression on a client
               falls on a website. As a result, your website should digitally
               represent the best aspects of your company. Brainstar Technologies
@@ -94,7 +105,7 @@ const Mobile = () => {
               most up-to-date and proven web technologies is one of the best web
               development in USA.
             </p>
-            <p>
+            <p data-aos="fade-up" data-aos-duration="2100">
               Many of the world's biggest corporations, SMEs, and technological
               competitors choose Brainstartechnology as their partner of choice.
               Through custom software development, product design, QA, and
@@ -112,7 +123,11 @@ const Mobile = () => {
         </div>
       </section>
 
-      <div className="featured container">
+      <div
+        className="featured container"
+        data-aos="fade-up"
+        data-aos-duration="2100"
+      >
         <div className="content grid5 mtop">
           {featured.map((items, index) => (
             <div className="box" key={index}>
@@ -123,7 +138,11 @@ const Mobile = () => {
           ))}
         </div>
       </div>
-      <div className="ContainerGlass">
+      <div
+        className="ContainerGlass"
+        data-aos="fade-up"
+        data-aos-duration="2100"
+      >
         <div class="canvas">
           <div class="circle"></div>
           <div id="cardss" class="cardss">
@@ -131,9 +150,27 @@ const Mobile = () => {
               <h3>Need An Awesome Marketing?</h3>
               <h5>We Provide :</h5>
               <div className="mini__cards text">
-                <div className="miniCard text">QUALITY</div>
-                <div className="miniCard text">RELIABILITY</div>
-                <div className="miniCard text">EXPERTISE</div>
+                <div
+                  className="miniCard text"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
+                  QUALITY
+                </div>
+                <div
+                  className="miniCard text"
+                  data-aos="fade-up"
+                  data-aos-duration="1100"
+                >
+                  RELIABILITY
+                </div>
+                <div
+                  className="miniCard text"
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                >
+                  EXPERTISE
+                </div>
               </div>
             </div>
             <div class="mt-40">
@@ -153,7 +190,6 @@ const Mobile = () => {
           </div>
           <div class="circle"></div>
         </div>
-       
       </div>
       <div className="footer-image">
         <img src={shape} alt="Phot0 not responding" />

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import img from "../../Assets/digital.jpg";
 import Back from "../common/back";
 import Heading from "../common/Heading";
@@ -18,7 +18,13 @@ import shape from "../../Assets/footer.png";
 import "./digital.css";
 import { ChevronBarRight } from "react-bootstrap-icons";
 import { Link } from "react-router-dom";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 const Digital = () => {
+    useEffect(() => {
+      Aos.init({ duration: 2000 });
+    }, []);
       const scrollToTop = () => {
         window.scrollTo(0, 0);
       };
@@ -80,8 +86,13 @@ const Digital = () => {
         <Back name="DIGITAL MARKETING" title="What We Give?" cover={img} />
         <div className="container flex mtop">
           <div className="left row">
-            <Heading title="DIGITAL MARKETING" subtitle="What We Provide? ?" />
-            <p>
+            <Heading
+              title="DIGITAL MARKETING"
+              subtitle="What We Provide? ?"
+              data-aos="fade-up"
+              data-aos-duration="2100"
+            />
+            <p data-aos="fade-up" data-aos-duration="2100">
               Brain star technologies provide a wide range of digital marketing
               services (DMS), including SEO, SMM, and SEM, to help businesses
               become more productive. Brain star Technologies, one of the
@@ -89,7 +100,7 @@ const Digital = () => {
               grow in a way that is suited for it by providing solutions to
               improve its online presence.
             </p>
-            <p>
+            <p data-aos="fade-up" data-aos-duration="2100">
               Many of the world's biggest corporations, SMEs, and technological
               competitors choose Brainstartechnology as their partner of choice.
               Through custom software development, product design, QA, and
@@ -106,7 +117,11 @@ const Digital = () => {
           </div>
         </div>
       </section>
-      <div className="featured container">
+      <div
+        className="featured container"
+        data-aos="fade-up"
+        data-aos-duration="2100"
+      >
         <div className="content grid5 mtop">
           {featured.map((items, index) => (
             <div className="box" key={index}>
@@ -117,7 +132,11 @@ const Digital = () => {
           ))}
         </div>
       </div>
-      <div className="ContainerGlass">
+      <div
+        className="ContainerGlass"
+        data-aos="fade-up"
+        data-aos-duration="2100"
+      >
         <div class="canvas">
           <div class="circle"></div>
           <div id="cardss" class="cardss">
@@ -125,12 +144,34 @@ const Digital = () => {
               <h3>Need An Awesome Marketing?</h3>
               <h5>We Provide :</h5>
               <div className="mini__cards text">
-                <div className="miniCard text">QUALITY</div>
-                <div className="miniCard text">RELIABILITY</div>
-                <div className="miniCard text">EXPERTISE</div>
+                <div
+                  className="miniCard text"
+                  data-aos="fade-up-left"
+                  data-aos-duration="1000"
+                >
+                  QUALITY
+                </div>
+                <div
+                  className="miniCard text"
+                  data-aos="fade-up-left"
+                  data-aos-duration="1100"
+                >
+                  RELIABILITY
+                </div>
+                <div
+                  className="miniCard text"
+                  data-aos="fade-up-left"
+                  data-aos-duration="1200"
+                >
+                  EXPERTISE
+                </div>
               </div>
             </div>
-            <div class="mt-40">
+            <div
+              class="mt-40"
+              data-aos="fade-up-right"
+              data-aos-duration="1000"
+            >
               <Link to={"/contactus"} onClick={scrollToTop}>
                 <a href="" className="buttons btn-lg btn-color btn-icon">
                   <span>Get In Touch</span>
@@ -147,7 +188,6 @@ const Digital = () => {
           </div>
           <div class="circle"></div>
         </div>
-       
       </div>
       <div className="footer-image">
         <img src={shape} alt="Phot0 not responding" />
