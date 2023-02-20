@@ -254,7 +254,7 @@
      }
  }
 
- @media screen and (max-width: 540px) {
+ @media screen and (max-width: 600px) {
      .separator {
          margin-top: 10rem;
      }
@@ -314,7 +314,7 @@
      }
  }
 
- @media only screen and (device-width:540px) {
+ @media only screen and (device-width:600px) {
      .experience {
          display: grid;
          grid-template-columns: repeat(2, 1fr);
@@ -331,7 +331,7 @@
      }
  }
 
- @media screen and (device-width: 540px) {
+ @media screen and (device-width: 600px) {
      .experience {
          margin-left: -6rem !important;
      }

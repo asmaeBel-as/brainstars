@@ -135,7 +135,7 @@
     position: static !important;
   }
 }
-@media screen and (device-width: 540px) {
+@media screen and (device-width: 600px) {
   .cards {
     margin-left: 7rem;
   }
