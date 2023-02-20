@@ -43,14 +43,14 @@ const Navbar = () => {
         <div className="container">
           <ul className="header-links pull-left">
             <li>
-              <a href="info@brainstartechnologies.com">
+              <a href="">
                 <i>
                   <FiMail />
                 </i>
               </a>
             </li>
             <span className="info">
-              <a href="info@brainstartechnologies.com"> info@brainstartechnologies.com</a>
+              <a href=""> info@brainstartechnologies.com</a>
              
             </span>
           </ul>

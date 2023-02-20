@@ -14,8 +14,10 @@ import Back from "../common/back";
 import services from "../../Assets/services.jpeg";
 import shape from "../../Assets/footer.png";
 import "./Appdev.css";
-import Button from "react-bootstrap/Button";
+import waving from "../../Assets/wave-hand.gif";
 import Modal from "react-bootstrap/Modal";
+import Swal from "sweetalert2";
+import { P } from "react-html5video/dist";
 
 function MyVerticallyCenteredModal(props) {
   return (
@@ -53,7 +55,8 @@ function WebDev(props) {
         <h4>Web Dev</h4>
         <div class="image">
           <img
-            src="https://img.freepik.com/free-vector/desktop-smartphone-app-development_23-2148683810.jpg?w=2000" alt="sq-sample14"
+            src="https://img.freepik.com/free-vector/desktop-smartphone-app-development_23-2148683810.jpg?w=2000"
+            alt="sq-sample14"
           />
         </div>
         <figcaption>
@@ -243,7 +246,26 @@ const Appdev = () => {
         </div>
         <div className="Ccards">
           {" "}
-          <div class="container" onClick={() => setModalShow(true)}>
+          <div
+            class="container"
+            onClick={() => {
+              Swal.fire({
+                backdrop: `
+    rgba(0,0,0,0.4)
+    url(${waving})
+    left top
+    no-repeat
+  `,
+                imageUrl:
+                  "https://img.freepik.com/free-vector/mobile-phone-surrounded-by-colorful-app-icons_52683-23825.jpg?w=200",
+                imageWidth: 400,
+                imageHeight: 200,
+                imageAlt: "Custom image",
+                html:
+                  " One of the most significant advantages of mobile apps for businesses is this. It aids in the establishment of a direct marketing channel between firms and their customers, allowing for immediate and effective connection. Here is your solution for searching for the best app development company in USA. and then you may install and send push and in-app alerts to as many clients as you want with your mobile app.",
+              });
+            }}
+          >
             <div class="container-cards">
               <div class="container-cards-surface container-cards-front">
                 <div class="container-cards-front-image">
@@ -265,7 +287,26 @@ const Appdev = () => {
               </div>
             </div>
           </div>
-          <div class="container" onClick={() => setWebShow(true)}>
+          <div
+            class="container"
+            onClick={() => {
+              Swal.fire({
+                backdrop: `
+    rgba(0,0,0,0.4)
+    url(${waving})
+    left top
+    no-repeat
+  `,
+                imageUrl:
+                  "https://img.freepik.com/free-vector/desktop-smartphone-app-development_23-2148683810.jpg?w=2000",
+                imageWidth: 400,
+                imageHeight: 200,
+                imageAlt: "Custom image",
+                html:
+                  " The task of generating a positive first impression on a client falls on a website. As a result, your website should digitally represent the best aspects of your company. Brainstar Technologies is one of the greatest web development company in USA, specializing in virtual branding and high-tech website building. We create a website that is adaptable to any design. Including everything from mobile web development and responsive website design to custom e-commerce and intranet experiences using the most up-to-date and proven web technologies is one of the best web development in USA.",
+              });
+            }}
+          >
             <div class="container-cards">
               <div class="container-cards-surface container-cards-front">
                 <div class="container-cards-front-image">
@@ -287,7 +328,26 @@ const Appdev = () => {
               </div>
             </div>
           </div>
-          <div class="container" onClick={() => setUxShow(true)}>
+          <div
+            class="container"
+            onClick={() => {
+              Swal.fire({
+                backdrop: `
+    rgba(0,0,0,0.4)
+    url(${waving})
+    left top
+    no-repeat
+  `,
+                imageUrl:
+                  "https://unit52.pk/wp-content/uploads/2021/08/UI-Design-Img.png",
+                imageWidth: 400,
+                imageHeight: 200,
+                imageAlt: "Custom image",
+                html:
+                  " UI/UX company works on aspects such as icons, style, colors, size, and visual components with the greatest team of web designers to give your business website a distinct appearance and feel. Your business website design will have a consistent and wonderful user experience thanks to the Brain star technologies UI UX design services.",
+              });
+            }}
+          >
             <div class="container-cards">
               <div class="container-cards-surface container-cards-front">
                 <div class="container-cards-front-image">
@@ -309,7 +369,26 @@ const Appdev = () => {
               </div>
             </div>
           </div>
-          <div class="container" onClick={() => setGraphicShow(true)}>
+          <div
+            class="container"
+            onClick={() => {
+              Swal.fire({
+                backdrop: `
+    rgba(0,0,0,0.4)
+    url(${waving})
+    left top
+    no-repeat
+  `,
+                imageUrl:
+                  "https://www.promoteabhi.com/public/frontend/images/graphic-designing/providing-creative.webp",
+                imageWidth: 400,
+                imageHeight: 200,
+                imageAlt: "Custom image",
+                html:
+                  "Graphic design has several advantages for organizations when applied well. It may help increase your marketing and advertising effort by providing excellent visual communication. It can assist in informing, educating, or persuading your target audience, as well as converting them into customers. It may help to promote your brand, so select the best graphic design services in USA wisely.",
+              });
+            }}
+          >
             <div class="container-cards">
               <div class="container-cards-surface container-cards-front">
                 <div class="container-cards-front-image">
@@ -332,7 +411,26 @@ const Appdev = () => {
               </div>
             </div>
           </div>
-          <div class="container" onClick={() => setSeoShow(true)}>
+          <div
+            class="container"
+            onClick={() => {
+              Swal.fire({
+                backdrop: `
+    rgba(0,0,0,0.4)
+    url(${waving})
+    left top
+    no-repeat
+  `,
+                imageUrl:
+                  "https://ocdigitalnetwork.com/wp-content/uploads/2018/04/h3-image-2.png",
+                imageWidth: 400,
+                imageHeight: 200,
+                imageAlt: "Custom image",
+                html:
+                  "SEO is the technique of using search engine results to increase the number and quality of traffic to a website. Your website must appear on the first page of the search engine results when it is searched.Few people have the strength to continue on to the next page. Our cutting-edge SEO strategy ensures that you obtain a significant increase in traffic, allowing you to meet all of your company goals. Brain star technologies are one of the finest and best SEO services company in USA, who gives best SEO service results in all over the world.",
+              });
+            }}
+          >
             <div class="container-cards">
               <div class="container-cards-surface container-cards-front">
                 <div class="container-cards-front-image">
@@ -354,7 +452,26 @@ const Appdev = () => {
               </div>
             </div>
           </div>
-          <div class="container" onClick={() => setDigitalShow(true)}>
+          <div
+            class="container"
+            onClick={() => {
+              Swal.fire({
+                backdrop: `
+    rgba(0,0,0,0.4)
+    url(${waving})
+    left top
+    no-repeat
+  `,
+                imageUrl:
+                  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSVbhm_Gmx293aUqOft3gh5v7DNECUfDJLL4UvA1z4Xfa-CaesBV7kmfzXYZ-GOpX9XB0&usqp=CAU",
+                imageWidth: 400,
+                imageHeight: 200,
+                imageAlt: "Custom image",
+                html:
+                  "  Brain star technologies provide a wide range of digital marketing services (DMS), including SEO, SMM, and SEM, to help businesses become more productive. Brain star Technologies, one of the leading digital marketing agency in USA, can help your company grow in a way that is suited for it by providing solutions to improve its online presence.",
+              });
+            }}
+          >
             <div class="container-cards">
               <div class="container-cards-surface container-cards-front">
                 <div class="container-cards-front-image">
