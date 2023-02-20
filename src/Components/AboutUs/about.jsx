@@ -54,7 +54,7 @@ const about = (props) => {
           About Us
         </h2>
       </div>
-      <div className="works" id="works">
+      <div className="works" id="aboutus">
         {/* left side */}
         <div className="w-left">
           <div className="awesome">

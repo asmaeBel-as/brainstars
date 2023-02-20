@@ -13,55 +13,6 @@
   --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
 }
 
-.dropdown-menu {
-  position: absolute;
-  top: 100px;
-  right: 20px;
-  background: #fff;
-  border-radius: 25px;
-  padding: 10px 20px;
-  width: 200px;
-}
-.dropdown-menu::before {
-  content: "";
-  position: absolute;
-  top: -5px;
-  right: 20px;
-  background: #000;
-  transform: rotate(45deg);
-}
-.dropdown-menu ul li {
-  padding: 10px 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.5);
-}
-.dropdown-menu ul li:hover a {
-  color: red;
-  cursor: pointer;
-}
-
-.dropdownItem {
-  display: flex;
-  flex-direction: column;
-  margin: 10px auto;
-  font-family: "Poppins";
-}
-.dropdownItem .item:hover {
-  color: #242D49;
-}
-
-.socials {
-  display: flex;
-  flex-direction: row;
-  background: #242D49;
-  height: 2rem;
-  z-index: 999 !important;
-}
-.socials .sIcon {
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
 #top-header {
   background: #242D49;
   /* fallback for old browsers */
@@ -79,10 +30,24 @@
   -webkit-transform: rotate(360deg) translateZ(0) !important;
 }
 
-.header-links {
+.pull-right {
   float: right;
   padding-bottom: 5px;
   padding-top: 0.2rem;
+}
+
+.pull-left {
+  float: left;
+  padding-bottom: 5px;
+  padding-top: 0.2rem;
+}
+
+.info a {
+  color: white;
+  font-family: "Poppins";
+}
+.info a:hover {
+  color: var(--orange);
 }
 
 .header-links li i {
@@ -228,5 +193,8 @@
 @media screen and (max-width: 600px) {
   .header-links {
     margin-right: -2rem;
+  }
+  .pull-left span {
+    display: none;
   }
 }/*# sourceMappingURL=navbar.css.map */

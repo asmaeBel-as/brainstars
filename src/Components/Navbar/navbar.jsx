@@ -6,20 +6,14 @@ import logo from "../../Assets/logo.png";
 import { FaBlog } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa"; 
 import { AiFillCloseCircle } from "react-icons/ai";
 import { TbGridDots } from "react-icons/tb";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import DropdownButton from "react-bootstrap/DropdownButton";
-import SplitButton from "react-bootstrap/SplitButton";
+import { FiMail } from "react-icons/fi";
 import {
-  Facebook,
   Instagram,
-  Linkedin,
   Twitter,
-  Whatsapp,
 } from "react-bootstrap-icons";
-import { ButtonGroup, Dropdown } from "react-bootstrap";
 const Navbar = () => {
   
   function buttonColor(props) {
@@ -47,37 +41,50 @@ const Navbar = () => {
     <section className="navBarSection">
       <div id="top-header">
         <div className="container">
+          <ul className="header-links pull-left">
+            <li>
+              <a href="info@brainstartechnologies.com">
+                <i>
+                  <FiMail />
+                </i>
+              </a>
+            </li>
+            <span className="info">
+              <a href="info@brainstartechnologies.com"> info@brainstartechnologies.com</a>
+             
+            </span>
+          </ul>
           <ul className="header-links pull-right">
             <li>
-              <a href="#">
+              <a href="https://www.facebook.com/brainstartech">
                 <i>
                   <FaFacebook />
                 </i>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://www.linkedin.com/company/brain-star-technologies/">
                 <i>
-                  <Linkedin />
+                  <FaLinkedin />
                 </i>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://wa.me/+917986324471">
                 <i>
                   <FaWhatsapp />
                 </i>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://twitter.com/BrainStarTech">
                 <i>
                   <Twitter />
                 </i>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://www.instagram.com/brainstartechnologies">
                 <i>
                   <Instagram />
                 </i>
@@ -101,7 +108,7 @@ const Navbar = () => {
             </li>
             <li className="navItem">
               <NavLink
-                to={{ pathname: "/", hash: "#works" }}
+                to={{ pathname: "/", hash: "#aboutus" }}
                 exact
                 className="navLink"
               >
@@ -109,13 +116,13 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li className="navItem">
-              <NavLink to="/AppDev" exact className="navLink">
+              <NavLink to="/services" exact className="navLink">
                 Services
               </NavLink>
             </li>
             <li className="navItem">
               <NavLink
-                to={{ pathname: "/", hash: "#skills" }}
+                to={{ pathname: "/", hash: "#technologies" }}
                 exact
                 className="navLink"
               >
@@ -123,54 +130,13 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li className="navItem">
-              {/* <NavLink
+              <NavLink
                 to={{ pathname: "/", hash: "#testimonials" }}
                 exact
                 className="navLink"
               >
                 Testimonials
-              </NavLink> */}
-
-              <div className="mb-2">
-                <NavDropdown
-                  // as={ButtonGroup}
-                  // key="down"
-                  // id={`nav-dropdown-dark-example`}
-                  // drop="down"
-                  // variant="secondary"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                  }}
-                  title={`Testimonials `}
-                  className="navLink"
-                  id="navDropDown"
-                  style={{ marginTop: ".5rem" }}
-                >
-                  <Dropdown.Item eventKey="1" className="dropdownItem ">
-                    <NavLink
-                      to={{ pathname: "/", hash: "#testimonials" }}
-                      exact
-                      className="item"
-                    >
-                      Text Testomonials
-                    </NavLink>
-                  </Dropdown.Item>
-                  <Dropdown.Item
-                   
-                    eventKey="2"
-                    className="dropdownItem"
-                  >
-                    {" "}
-                    <NavLink
-                      to={{ pathname: "/", hash: "#videotestimonial" }}
-                      exact
-                      className="item"
-                    >
-                      Video Testimonial
-                    </NavLink>
-                  </Dropdown.Item>
-                </NavDropdown>
-              </div>
+              </NavLink>
             </li>
             <li className="navItem">
               <NavLink to="/contactus" exact className="navLink">

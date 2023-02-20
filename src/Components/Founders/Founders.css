@@ -354,7 +354,7 @@ spane {
     margin-left: 0.4rem !important;
   }
 }
-@media only screen and (device-width: 540px) {
+@media only screen and (device-width: 600px) {
   .founders {
     margin-left: 6rem !important;
   }

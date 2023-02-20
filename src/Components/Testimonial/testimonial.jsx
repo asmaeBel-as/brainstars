@@ -59,11 +59,7 @@ export default function Testimonial(props) {
   };
   return (
     <div>
-      <div className="program__headste">
-        <span>{<GiTalk />}</span>
-        <h2>Testimonials</h2>
-      </div>
-      <section className="testimonial-section fade-in" id="testimonials">
+      <section className="testimonial-section fade-in" >
         <div className="container">
           <div className="row">
             <OwlCarousel

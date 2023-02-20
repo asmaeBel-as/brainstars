@@ -292,7 +292,7 @@
   }
 
   // MEDIA QUERIES =======================================>
-  @media screen and (max-width: 540px) {
+  @media screen and (max-width: 600px) {
       .card {
           margin-top: 15rem;
       }
@@ -301,7 +301,7 @@
           display: grid;
           grid-template-columns: repeat(1, 1fr) !important;
           width: 20rem;
-          margin-left: -3rem;
+          margin-left: -1.5rem;
           gap: 3rem;
       }
 
@@ -310,11 +310,7 @@
       }
   }
 
-  @media screen and (device-width: 540px) {
-      .card {
-          margin-top: 20rem;
-      }
-  }
+ 
 
   @media screen and (device-width: 280px) {
       .card {

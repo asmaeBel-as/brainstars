@@ -44,14 +44,12 @@ function App() {
                   <Outlet />
                   <Home />
                   <AboutUs />
-
                   <Founders />
                   <Companies />
                   <Services />
                   <Counter />
-                  <Card />
                   <Technologies />
-
+                  <Card />
                   <Testimonials />
                   <Footer />
                 </>
@@ -81,7 +79,7 @@ function App() {
             />
             <Route
               exact
-              path="/AppDev"
+              path="/services"
               element={
                 <>
                   <Navbar />

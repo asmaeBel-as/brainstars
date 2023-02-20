@@ -15,7 +15,7 @@
 
 .banner {
   padding: 260px 0 100px 0;
-  background-image: url("../../Assets/banner-bg.png");
+  background: url("../../Assets/vidm.gif");
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;

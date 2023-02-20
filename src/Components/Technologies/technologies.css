@@ -14,6 +14,7 @@
 .skill {
   position: relative;
   width: 95rem;
+  margin-bottom: 6rem;
 }
 
 .skill-bx {
@@ -21,7 +22,6 @@
   border-radius: 64px;
   text-align: center;
   padding-bottom: 60px;
-  margin-top: 5rem;
   margin-left: -12rem;
 }
 
@@ -135,10 +135,11 @@
     transform: translateY(-20px);
   }
 }
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 600px) {
   .skill {
     width: 55%;
-    margin-left: 11rem;
+    margin-left: 11.2rem;
+    margin-top: 15rem !important;
   }
   .arrowContainer {
     margin-left: 17rem;
@@ -150,6 +151,7 @@
 @media screen and (device-width: 280px) {
   .skill {
     width: 30% !important;
+    margin-left: 12rem;
   }
   .skill h2 {
     font-size: 20px;

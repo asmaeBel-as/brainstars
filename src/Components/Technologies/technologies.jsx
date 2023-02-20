@@ -102,7 +102,7 @@ const technologies = (props) => {
         <Row>
           <Col size={18}>
             <div className="skill-bx wow zoomIn">
-              <h2 id="skills">Techologies</h2>
+              <h2 id="technologies">Techologies</h2>
               <p>
                 We offer Services with various Technologies<br></br> Lorem Ipsum
                 has been the industry's standard dummy text.
