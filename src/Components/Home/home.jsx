@@ -12,6 +12,7 @@ import { Link } from "react-router-dom";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import { useCallback } from "react";
+import sample from "../../Assets/vidm.gif";
 const home = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -70,10 +71,6 @@ const home = () => {
           <div class="layer"></div>
         </div> */}
 
-
-
-
-        
         {/* <TrackVisibility>
           <div className="shooting">
             <img src={shooting} alt="Header Img" />
@@ -99,11 +96,6 @@ const home = () => {
             <img src={shooting} alt="Header Img" />
           </div>
         </TrackVisibility> */}
-
-
-
-
-        
 
         {/* <div className="keyy">
           <img src={img} alt="Header Img" />
@@ -146,8 +138,11 @@ const home = () => {
             <Col xs={12} md={6} xl={5}>
               <TrackVisibility>
                 {({ isVisible }) => (
-                  <div className={"img"}>
-                    <img src={headerImg} alt="Header Img" />
+                  // <div className={"img"}>
+                  //   <img src={headerImg} alt="Header Img" />
+                  // </div>
+                  <div className="video-background">
+                    <img className="video" src={sample} alt="Header Img" />
                   </div>
                 )}
               </TrackVisibility>

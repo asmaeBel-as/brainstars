@@ -1,6 +1,6 @@
 import React from "react";
 import mohit from "../../Assets/Mohit.jpg";
-import img from "../../Assets/scot.jpg";
+import img from "../../Assets/graphicd.png";
 import uiux from "../../Assets/uiux.png";
 import phone from "../../Assets/phone.jpg";
 import web from "../../Assets/devweb.jpg";
@@ -8,16 +8,18 @@ import graphic from "../../Assets/graphicd.png";
 import seo from "../../Assets/seo.jpg";
 import digital from "../../Assets/digital.png";
 import Aos from "aos";
+import marke from '../../Assets/marketing2.png';
+import se from "../../Assets/seo.jpg";
 import "aos/dist/aos.css";
 import { FaAward } from "react-icons/fa";
-import Back from "../common/back";
+
 import services from "../../Assets/services.jpeg";
 import shape from "../../Assets/footer.png";
 import "./Appdev.css";
 import waving from "../../Assets/wave-hand.gif";
 import Modal from "react-bootstrap/Modal";
 import Swal from "sweetalert2";
-import { P } from "react-html5video/dist";
+
 
 function MyVerticallyCenteredModal(props) {
   return (
@@ -256,9 +258,8 @@ const Appdev = () => {
     left top
     no-repeat
   `,
-                imageUrl:
-                  "https://img.freepik.com/free-vector/mobile-phone-surrounded-by-colorful-app-icons_52683-23825.jpg?w=200",
-                imageWidth: 400,
+                imageUrl: phone,
+                  imageWidth: 300,
                 imageHeight: 200,
                 imageAlt: "Custom image",
                 html:
@@ -297,9 +298,8 @@ const Appdev = () => {
     left top
     no-repeat
   `,
-                imageUrl:
-                  "https://img.freepik.com/free-vector/desktop-smartphone-app-development_23-2148683810.jpg?w=2000",
-                imageWidth: 400,
+                imageUrl:web,
+                  imageWidth: 300,
                 imageHeight: 200,
                 imageAlt: "Custom image",
                 html:
@@ -338,9 +338,8 @@ const Appdev = () => {
     left top
     no-repeat
   `,
-                imageUrl:
-                  "https://unit52.pk/wp-content/uploads/2021/08/UI-Design-Img.png",
-                imageWidth: 400,
+                imageUrl: uiux,
+                imageWidth: 300,
                 imageHeight: 200,
                 imageAlt: "Custom image",
                 html:
@@ -380,8 +379,8 @@ const Appdev = () => {
     no-repeat
   `,
                 imageUrl:
-                  "https://www.promoteabhi.com/public/frontend/images/graphic-designing/providing-creative.webp",
-                imageWidth: 400,
+                  img,
+                imageWidth: 300,
                 imageHeight: 200,
                 imageAlt: "Custom image",
                 html:
@@ -422,8 +421,8 @@ const Appdev = () => {
     no-repeat
   `,
                 imageUrl:
-                  "https://ocdigitalnetwork.com/wp-content/uploads/2018/04/h3-image-2.png",
-                imageWidth: 400,
+                  se,
+                imageWidth: 300,
                 imageHeight: 200,
                 imageAlt: "Custom image",
                 html:
@@ -462,9 +461,8 @@ const Appdev = () => {
     left top
     no-repeat
   `,
-                imageUrl:
-                  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSVbhm_Gmx293aUqOft3gh5v7DNECUfDJLL4UvA1z4Xfa-CaesBV7kmfzXYZ-GOpX9XB0&usqp=CAU",
-                imageWidth: 400,
+                imageUrl: marke,
+                imageWidth: 300,
                 imageHeight: 200,
                 imageAlt: "Custom image",
                 html:
