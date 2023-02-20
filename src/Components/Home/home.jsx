@@ -64,11 +64,16 @@ const home = () => {
   return (
     <>
       <section className="banner" id="home">
-        <div class="star-field">
+        {/* <div class="star-field">
           <div class="layer"></div>
           <div class="layer"></div>
           <div class="layer"></div>
-        </div>
+        </div> */}
+
+
+
+
+        
         {/* <TrackVisibility>
           <div className="shooting">
             <img src={shooting} alt="Header Img" />
@@ -95,9 +100,14 @@ const home = () => {
           </div>
         </TrackVisibility> */}
 
-        <div className="keyy">
+
+
+
+        
+
+        {/* <div className="keyy">
           <img src={img} alt="Header Img" />
-        </div>
+        </div> */}
 
         <Container>
           <Row className="aligh-items-center">
