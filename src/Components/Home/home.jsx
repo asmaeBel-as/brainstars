@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import { useCallback } from "react";
-import sample from "../../Assets/vidm.gif";
+import sample from "../../Assets/bvideo.mp4";
 const home = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -65,6 +65,9 @@ const home = () => {
   return (
     <>
       <section className="banner" id="home">
+        <video autoPlay muted loop id="bg-video">
+          <source src={sample} type="video/mp4" />
+        </video>
         {/* <div class="star-field">
           <div class="layer"></div>
           <div class="layer"></div>
@@ -137,14 +140,14 @@ const home = () => {
 
             <Col xs={12} md={6} xl={5}>
               <TrackVisibility>
-                {({ isVisible }) => (
+                {/* {({ isVisible }) => (
                   // <div className={"img"}>
                   //   <img src={headerImg} alt="Header Img" />
                   // </div>
                   <div className="video-background">
                     <img className="video" src={sample} alt="Header Img" />
                   </div>
-                )}
+                )} */}
               </TrackVisibility>
             </Col>
           </Row>

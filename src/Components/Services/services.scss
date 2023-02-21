@@ -115,7 +115,7 @@
 
   /* left side */
   /* right sided */
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 767px) {
       .separator1 {
           margin-bottom: 9rem !important;
           margin-top: -10rem !important;
@@ -152,7 +152,7 @@
       }
   }
 
-  @media screen and (device-width: 600px) {
+  @media screen and (device-width: 767px) {
       .cards {
           margin-left: 7rem;
       }

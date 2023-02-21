@@ -38,6 +38,7 @@
 }
 
 .testimonial-section::before {
+
     content: "";
     position: absolute;
     left: 0;
@@ -338,7 +339,7 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
 
 .program__headste {
       

@@ -230,7 +230,7 @@
     transform: translateY(-90vh) scale(1);
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .card {
     margin-top: 15rem;
   }

@@ -47,10 +47,10 @@ const about = (props) => {
   return (
     <section className="about-us-container fade-in ">
       <div className="program__heada">
-        <span data-aos="fade-up" data-aos-duration="2000">
+        <span >
           {<BsFillJournalBookmarkFill />}
         </span>
-        <h2 data-aos="fade-up" data-aos-duration="2100">
+        <h2 >
           About Us
         </h2>
       </div>
@@ -59,10 +59,10 @@ const about = (props) => {
         <div className="w-left">
           <div className="awesome">
             {/* dark Mode */}
-            <span data-aos="fade-up-left" data-aos-duration="1000">
+            <span >
               Hello, We Are
             </span>
-            <span data-aos="fade-up-left" data-aos-duration="1000">
+            <span >
               Brain Star Technologies
             </span>
             <spane data-aos="fade-up-left" data-aos-duration="1100">

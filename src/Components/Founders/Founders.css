@@ -93,7 +93,7 @@ h1 {
   transition: 0.25s;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   .rrelative__container {
     margin-top: 2rem;
   }
@@ -354,7 +354,7 @@ spane {
     margin-left: 0.4rem !important;
   }
 }
-@media only screen and (device-width: 600px) {
+@media only screen and (device-width: 767px) {
   .founders {
     margin-left: 6rem !important;
   }

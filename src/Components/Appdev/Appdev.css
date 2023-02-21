@@ -103,7 +103,7 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .snip1195 {
     font-family: "Raleway", Arial, sans-serif;
     position: relative;
@@ -499,7 +499,7 @@ button {
     margin: 1rem 0 1.5rem;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .ourServices {
     width: 100% !important;
     margin: 0 auto 3rem;
@@ -541,7 +541,7 @@ button {
     width: 10rem;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .Ccards {
     grid-template-columns: repeat(1, 1fr);
     padding: 20px;
