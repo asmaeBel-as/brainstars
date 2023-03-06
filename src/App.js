@@ -13,7 +13,7 @@ import Testimonials from "./Components/Testimonial/testimonial";
 import Counter from "./Components/Counter/counter";
 import Card from "./Components/Card/Card";
 import AppDev from "./Components/Appdev/Appdev";
-import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
+import { HashRouter, Routes, Route, Outlet } from "react-router-dom";
 import Founders from "./Components/Founders/Founders";
 import Chat from "./Components/chatbox/chatbox";
 import Mobile from "./Components/mobile/mobile";
@@ -33,7 +33,7 @@ function App() {
   }
   return (
     !loading && (
-      <BrowserRouter>
+      <HashRouter>
         <>
           <Routes>
             <Route
@@ -153,7 +153,7 @@ function App() {
       
        */}
         </>
-      </BrowserRouter>
+      </HashRouter>
     )
   );
 }
